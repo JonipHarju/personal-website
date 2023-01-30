@@ -11,24 +11,8 @@
 
 .infoContainer {
   flex-direction: column;
-  /* animation: type 2s; */
   margin-left: 1rem;
   margin-right: 1rem;
-}
-
-.infoContainer > * {
-}
-
-/* @keyframes type {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 100;
-  }
-} */
-
-.imageContainer {
 }
 
 .img {
@@ -44,7 +28,4 @@
   .img {
     width: 0;
   }
-}
-
-.buttonContainer {
 }

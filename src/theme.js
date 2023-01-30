@@ -24,6 +24,10 @@ const theme = createTheme({
     brand: {
       main: "#0070E0",
     },
+
+    body: {
+      main: "#000000",
+    },
   },
 
   typography: {

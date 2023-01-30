@@ -7,7 +7,13 @@ export default function () {
   return (
     <main className={Style.container}>
       <div className={Style.aboutMeContainer}>
-        <Typography variant="h3" component="h5" color="brand.main" mb={3}>
+        <Typography
+          variant="h3"
+          component="h5"
+          color="brand.main"
+          mb={5}
+          mt={5}
+        >
           A bit about me
         </Typography>
         <Typography variant="h6" component="body1" fontWeight="light">
@@ -23,9 +29,8 @@ export default function () {
           effective solutions to a wide range of web development projects."
         </Typography>
       </div>
-      {/* #3399FF */}
       <div className={Style.technologyContainer}>
-        <Typography variant="h3" component="h6" mb={3} color="brand.main">
+        <Typography variant="h3" component="h6" mb={5} color="brand.main">
           My Arsenal
         </Typography>
         <div className={Style.imageContainer}>
