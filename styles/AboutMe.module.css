@@ -49,4 +49,16 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+  .aboutMeContainer {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .technologyContainer {
+    width: 75%;
+    align-items: center;
+  }
 }
