@@ -11,9 +11,7 @@ export default function LandingPage() {
       <Container disableGutters maxWidth="false">
         <Box
           sx={{
-            backgroundImage:
-              //   "url(https://lh5.googleusercontent.com/c4LCmfH8GfcVap306PT6nSgA1Bl8J10vAC5EvsPnjwnO1ogebB1LTBHOQqSGihfp9dU=w2400)",
-              `url(${Image.src})`,
+            backgroundImage: `url(${Image.src})`,
             backgroundSize: "cover",
             height: "100vh",
           }}

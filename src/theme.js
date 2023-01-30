@@ -21,7 +21,11 @@ const theme = createTheme({
     error: {
       main: red.A400,
     },
+    brand: {
+      main: "#0070E0",
+    },
   },
+
   typography: {
     fontFamily: roboto.style.fontFamily,
     palette: {
