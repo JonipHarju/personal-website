@@ -1,8 +1,12 @@
 import React from "react";
 import { Typography, Box } from "@mui/material";
-import Style from "../../styles/Projects.module.css";
+import Style from "./Projects.module.css";
 import { Container } from "@mui/system";
 import Project from "./ProjectDisplaySkeleton";
+import Image2 from "../../public/memoryGame.jpg";
+import Image1 from "../../public/signUpPage.jpg";
+import Image3 from "../../public/weatherApp.jpg";
+import Image4 from "../../public/quizApp.jpg";
 export default function Projects() {
   return (
     <Container
@@ -15,41 +19,49 @@ export default function Projects() {
       }}
       maxWidth="false"
     >
-      <Box
-        sx={{
-          width: "50%",
-          display: "flex",
-          justifyContent: "flex-start",
-          flexDirection: "column",
-        }}
-        m={0}
-      >
+      <div className={Style.projectsHeadingContainer}>
         <Typography
-          variant="h3"
-          component="h5"
+          variant="h2"
+          component="h6"
           color="brand.main"
           mb={5}
           mt={5}
+          fontWeight="bold"
         >
           Projects
         </Typography>
-        <Typography variant="h6" component="body1" fontWeight="light" mb={5}>
-          Below are a few of my practice projects! Note that some of these I did
-          after only coding for a few months
-        </Typography>
-      </Box>
+      </div>
 
-      <Box
-        sx={{
-          width: "50%",
-          backgroundColor: "red",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "flex-start",
-        }}
-      >
-        <Project />
-      </Box>
+      <div className={Style.projectsContainer}>
+        <Project
+          header={"Memory Game"}
+          image={Image1}
+          text={
+            "A simple memory game made with React. You need to click each card once and after each click they shuffle around. "
+          }
+        />
+        <Project
+          header={"Memory Game"}
+          image={Image2}
+          text={
+            "A simple memory game made with React. You need to click each card once and after each click they shuffle around. "
+          }
+        />
+        <Project
+          header={"Memory Game"}
+          image={Image3}
+          text={
+            "A simple memory game made with React. You need to click each card once and after each click they shuffle around. "
+          }
+        />
+        <Project
+          header={"Memory Game"}
+          image={Image4}
+          text={
+            "A simple memory game made with React. You need to click each card once and after each click they shuffle around. "
+          }
+        />
+      </div>
     </Container>
   );
 }

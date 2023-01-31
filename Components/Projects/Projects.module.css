@@ -1,0 +1,30 @@
+.projectsHeadingContainer {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.projectsContainer {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* @media only screen and (max-width: 1400px) {
+  .projectsContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .projectsHeadingContainer {
+    width: 90%;
+  }
+  .projectsContainer {
+    width: 95%;
+  }
+} */

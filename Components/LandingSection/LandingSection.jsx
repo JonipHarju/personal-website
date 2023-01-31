@@ -2,7 +2,7 @@ import * as React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
-import Image from "../../public/backgroundImage.jpg";
+import Image from "../../public/backgroundImage.webp";
 import Introduction from "./Introduction/Introduction";
 export default function LandingPage() {
   return (
