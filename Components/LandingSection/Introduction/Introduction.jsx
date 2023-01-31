@@ -56,7 +56,7 @@ export default function Introduction() {
       <div className={Style.imageContainer}>
         <img
           className={Style.img}
-          src="pngwing.com.png"
+          src="pngwing.com.webp"
           alt="programmer logo"
         />
       </div>
