@@ -19,6 +19,12 @@ export default function MyApp(props) {
       <Head>
         <title>Joni Harju</title>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
+        <meta
+          name="description"
+          content=" Discover my skills and experience as a web developer with this
+          portfolio website. Explore my latest projects and get in touch to
+          learn how I can bring your ideas to life."
+        />
       </Head>
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
