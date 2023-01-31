@@ -27,7 +27,7 @@ export default function Footer() {
             alt="github"
           />
         </Link>
-        <Link href="https://www.linkedin.com/in/joni-h-89172a134/details/experience/">
+        <Link href="https://www.linkedin.com/in/joni-h-89172a134/">
           <img
             width="50px"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
