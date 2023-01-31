@@ -34,8 +34,13 @@ export default function Footer() {
             alt="linkedin"
           />
         </Link>
+        <Typography variant="body2">
+          Image by
+          <a href="https://www.freepik.com/free-vector/sky-wallpaper-video-conferencing_9270534.htm#query=sky%20background%20cartoonish&position=25&from_view=search&track=ais">
+            Freepik
+          </a>
+        </Typography>
       </Box>
-      <Box></Box>
     </Container>
   );
 }
