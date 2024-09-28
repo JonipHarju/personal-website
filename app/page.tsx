@@ -1,6 +1,5 @@
-import Portfolio from "@/components/portfolio/Portfolio";
-import Image from "next/image";
+import { AppLayout } from "@/components/Applayout";
 
 export default function Home() {
-  return <Portfolio />;
+  return <AppLayout />;
 }

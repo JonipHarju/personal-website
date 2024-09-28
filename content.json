@@ -1,0 +1,189 @@
+{
+  "heroSection": {
+    "title": "Joni Harju",
+    "subtitle": "Software Engineer & Tech Enthusiast",
+    "description": "Turning ideas into reality through code and innovation",
+    "cta": "Discover My Journey"
+  },
+  "about": {
+    "title": "About Me",
+    "name": "Joni Harju",
+    "description": "As a passionate full-stack developer with 3 years of hands-on experience, I'm on a mission to push the boundaries of web development. My journey in tech is fueled by curiosity and a relentless drive to learn and create innovative solutions.",
+    "contact": {
+      "email": "jonipharju@gmail.com",
+      "linkedin": "https://linkedin.com/in/exmaple",
+      "github": "https://github.com/example",
+      "resume": "/joni-resume.pdf"
+    },
+    "background": "With a strong foundation in computer science and 3 years of professional experience, I specialize in building scalable web applications using modern technologies.",
+    "goals": "My goal is to contribute to innovative projects that push the boundaries of what's possible in web development. My goal is to contribute to innovative projects that push the boundaries of what's possible in web development.",
+    "currentFocus": "I'm currently diving deep into advanced state management techniques and serverless architectures. I'm currently diving deep into advanced state management techniques and serverless architectures."
+  },
+
+  "projects": [
+    {
+      "title": "E-commerce Platform",
+      "description": "Developed a comprehensive full-stack e-commerce solution that revolutionizes online shopping experiences. The platform integrates real-time inventory tracking, secure payment gateways, and a dynamic recommendation engine to personalize user experiences. Built with scalability in mind, the platform supports thousands of concurrent users and handles large transaction volumes seamlessly. Additionally, a user-friendly admin panel was designed to manage products, orders, and customer interactions with ease. This solution has dramatically increased conversion rates and customer retention, proving to be a highly profitable investment for the client.",
+      "duration": "6 months",
+      "technologies": ["React", "Node.js", "Express", "MongoDB", "Stripe API"],
+      "liveLink": "https://ecommerce-platform.example.com",
+      "testimonial": {
+        "text": "Joni's work on our e-commerce platform was exceptional. He delivered beyond our expectations with an innovative solution that is both robust and easy to manage.",
+        "author": "Jane Smith",
+        "title": "CEO, TechRetail Inc."
+      }
+    },
+    {
+      "title": "AI-Powered Content Generator",
+      "description": "Created an innovative AI-driven tool that transforms content creation for websites and social media. The tool automates the process of generating SEO-friendly and industry-specific content, drastically reducing the time and effort needed for manual content creation. Utilizing machine learning algorithms, it personalizes content for the target audience while maintaining brand voice. The platform also features integrations with major content management systems, allowing for easy deployment and updates. The project included a powerful API that supports real-time content adjustments based on performance metrics, driving both engagement and conversions.",
+      "duration": "8 months",
+      "technologies": [
+        "Python",
+        "TensorFlow",
+        "React",
+        "FastAPI",
+        "PostgreSQL"
+      ],
+      "liveLink": "https://example.com",
+      "testimonial": {
+        "text": "The AI content generator Joni developed has revolutionized our content creation process. We’ve been able to scale content production while maintaining a high level of quality.",
+        "author": "Mike Johnson",
+        "title": "Content Director, AI Innovations"
+      }
+    },
+    {
+      "title": "Smart Home IoT Dashboard",
+      "description": "Engineered a real-time IoT dashboard that provides smart home device users with seamless control and monitoring. The dashboard features data visualization for energy consumption, device status, and real-time alerts for anomalies. Designed with an intuitive UI, the platform integrates with various IoT devices and popular voice assistants for easy control. Users can create custom automations based on device activity or time schedules, enhancing the home automation experience. This project not only improved user engagement but also increased the adoption of smart home technology among novice users.",
+      "duration": "7 months",
+      "technologies": ["React", "Node.js", "Socket.io", "MongoDB", "D3.js"],
+      "liveLink": "https://smarthome-dashboard.example.com",
+      "testimonial": {
+        "text": "Joni's IoT dashboard transformed our smart home ecosystem. It made managing devices so much easier for our users, leading to increased engagement and retention.",
+        "author": "Sarah Lee",
+        "title": "Product Manager, SmartLiving Tech"
+      }
+    },
+    {
+      "title": "Custom CRM System",
+      "description": "Developed a fully customized CRM system tailored for small businesses. The platform supports lead tracking, sales automation, and customer service workflows. Features include email integration, automated follow-ups, and detailed reporting dashboards to track team performance and sales funnels. The system also offers customization options for different industries, allowing businesses to tweak the CRM to their specific needs. By automating key processes, the CRM significantly reduced time spent on manual tasks, enabling teams to focus on more strategic initiatives.",
+      "duration": "10 months",
+      "technologies": ["Laravel", "MySQL", "React", "Redis", "AWS"],
+      "liveLink": "https://crm-platform.example.com",
+      "testimonial": {
+        "text": "The CRM system Joni built has streamlined our entire sales process. It’s intuitive, easy to use, and customizable, making it the perfect fit for our business.",
+        "author": "David Kim",
+        "title": "CEO, BizGrowth Solutions"
+      }
+    }
+  ],
+
+  "contact": {
+    "title": "Get in Touch",
+    "contactInfoTitle": "Contact Information",
+    "contactPlatforms": [
+      {
+        "name": "GitHub",
+        "url": "https://github.com/johndoe",
+        "display": "github.com/johndoe"
+      },
+      {
+        "name": "Email",
+        "url": "mailto:john.doe@example.com",
+        "display": "john.doe@example.com"
+      },
+      {
+        "name": "test",
+        "url": "/",
+        "display": "example.com yep"
+      }
+    ],
+    "formTitle": "Feel free to reach out to me through any of these platforms."
+  },
+
+  "techStack": [
+    {
+      "name": "React",
+      "icon": "FaReact",
+      "skillLevel": "Advanced",
+      "experience": "2 years",
+      "lastUsed": "Currently using"
+    },
+    {
+      "name": "Next.js",
+      "icon": "SiNextdotjs",
+      "skillLevel": "Advanced",
+      "experience": "2 years",
+      "lastUsed": "Current using"
+    },
+    {
+      "name": "TypeScript",
+      "icon": "SiTypescript",
+      "skillLevel": "Advanced",
+      "experience": "2 years",
+      "lastUsed": "Currently using"
+    },
+    {
+      "name": "JavaScript",
+      "icon": "FaJs",
+      "skillLevel": "Advanced",
+      "experience": "3 years",
+      "lastUsed": "Currently using"
+    },
+    {
+      "name": "HTML",
+      "icon": "FaHtml5",
+      "skillLevel": "Advanced",
+      "experience": "4 years",
+      "lastUsed": "Currently using"
+    },
+    {
+      "name": "CSS",
+      "icon": "FaCss3Alt",
+      "skillLevel": "Advanced",
+      "experience": "4 years",
+      "lastUsed": "Currently using§"
+    },
+    {
+      "name": "Tailwind CSS",
+      "icon": "SiTailwindcss",
+      "skillLevel": "Intermediate",
+      "experience": "0.5 years",
+      "lastUsed": "Currently using"
+    },
+    {
+      "name": "Node.js",
+      "icon": "FaNodeJs",
+      "skillLevel": "advanced",
+      "experience": "2 years",
+      "lastUsed": "Currently using"
+    },
+    {
+      "name": "PostgreSQL",
+      "icon": "SiPostgresql",
+      "skillLevel": "Intermediate",
+      "experience": "1 years",
+      "lastUsed": "1 year ago"
+    },
+    {
+      "name": "Sanity.io",
+      "icon": "SiSanity",
+      "skillLevel": "Intermediate",
+      "experience": "0.5 years",
+      "lastUsed": "Currently"
+    },
+    {
+      "name": "Material-UI",
+      "icon": "SiMui",
+      "skillLevel": "Intermediate",
+      "experience": "1 year",
+      "lastUsed": "6 months ago"
+    },
+    {
+      "name": "Prisma",
+      "icon": "SiPrisma",
+      "skillLevel": "Intermediate",
+      "experience": "0.5 years",
+      "lastUsed": "6 months ago"
+    }
+  ]
+}

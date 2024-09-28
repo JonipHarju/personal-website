@@ -87,7 +87,7 @@ const projects = [
     liveLink: "https://ecommerce-platform.example.com",
     duration: "6 months",
     testimonial: {
-      text: "John's work on our e-commerce platform was exceptional. His attention to detail and problem-solving skills significantly improved our user experience and sales conversion rates.",
+      text: "Joni's work on our e-commerce platform was exceptional. His attention to detail and problem-solving skills significantly improved our user experience and sales conversion rates.",
       author: "Jane Smith",
       title: "CEO, TechRetail Inc.",
     },
@@ -109,8 +109,8 @@ const projects = [
     liveLink: "https://ai-content-generator.example.com",
     duration: "8 months",
     testimonial: {
-      text: "The AI content generator John developed has revolutionized our content creation process. It's intuitive, efficient, and produces remarkably human-like text.",
-      author: "Mike Johnson",
+      text: "The AI content generator Joni developed has revolutionized our content creation process. It's intuitive, efficient, and produces remarkably human-like text.",
+      author: "Mike Jonison",
       title: "Content Director, AI Innovations",
     },
   },
@@ -131,7 +131,7 @@ const projects = [
     liveLink: "https://smart-home-dashboard.example.com",
     duration: "7 months",
     testimonial: {
-      text: "John's IoT dashboard is a game-changer for our smart home product line. The intuitive interface and real-time capabilities have significantly enhanced our user engagement.",
+      text: "Joni's IoT dashboard is a game-changer for our smart home product line. The intuitive interface and real-time capabilities have significantly enhanced our user engagement.",
       author: "Sarah Lee",
       title: "Product Manager, SmartLiving Tech",
     },
@@ -530,29 +530,29 @@ const ContactSection = () => {
             </p>
             <div className="flex flex-col space-y-4">
               <a
-                href="https://github.com/johndoe"
+                href="https://github.com/JoniHarju"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-3 text-gray-300 hover:text-purple-400 transition-colors"
               >
                 <Github className="h-5 w-5" />
-                <span>github.com/johndoe</span>
+                <span>github.com/JoniHarju</span>
               </a>
               <a
-                href="https://linkedin.com/in/johndoe"
+                href="https://linkedin.com/in/JoniHarju"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-3 text-gray-300 hover:text-purple-400 transition-colors"
               >
                 <Linkedin className="h-5 w-5" />
-                <span>linkedin.com/in/johndoe</span>
+                <span>linkedin.com/in/JoniHarju</span>
               </a>
               <a
-                href="mailto:john.doe@example.com"
+                href="mailto:Joni.Harju@example.com"
                 className="flex items-center space-x-3 text-gray-300 hover:text-purple-400 transition-colors"
               >
                 <Mail className="h-5 w-5" />
-                <span>john.doe@example.com</span>
+                <span>Joni.Harju@example.com</span>
               </a>
             </div>
           </motion.div>
@@ -718,7 +718,7 @@ export default function Component() {
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            John Doe
+            Joni Harju
           </motion.h1>
           <motion.h2
             className="text-2xl md:text-4xl text-gray-300 mb-6"
@@ -797,7 +797,7 @@ export default function Component() {
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 rounded-full animate-pulse"></div>
                 <img
                   src="/placeholder.svg?height=192&width=192"
-                  alt="John Doe"
+                  alt="Joni Harju"
                   className="rounded-full w-full h-full object-cover border-4 border-white relative z-10"
                 />
               </div>
@@ -815,32 +815,32 @@ export default function Component() {
                   <li>
                     <strong>Email:</strong>{" "}
                     <a
-                      href="mailto:john.doe@example.com"
+                      href="mailto:Joni.Harju@example.com"
                       className="text-pink-500 hover:underline"
                     >
-                      john.doe@example.com
+                      Joni.Harju@example.com
                     </a>
                   </li>
                   <li>
                     <strong>LinkedIn:</strong>{" "}
                     <a
-                      href="https://linkedin.com/in/johndoe"
+                      href="https://linkedin.com/in/JoniHarju"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-pink-500 hover:underline"
                     >
-                      linkedin.com/in/johndoe
+                      linkedin.com/in/JoniHarju
                     </a>
                   </li>
                   <li>
                     <strong>GitHub:</strong>{" "}
                     <a
-                      href="https://github.com/johndoe"
+                      href="https://github.com/JoniHarju"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-pink-500 hover:underline"
                     >
-                      github.com/johndoe
+                      github.com/JoniHarju
                     </a>
                   </li>
                 </ul>
@@ -849,7 +849,7 @@ export default function Component() {
                   className="bg-orange-600 hover:bg-orange-700 text-white"
                 >
                   <a
-                    href="/john-doe-resume.pdf"
+                    href="/Joni-Harju-resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center"

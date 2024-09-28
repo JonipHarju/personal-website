@@ -1,6 +1,14 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 
+interface Particle {
+  x: number;
+  y: number;
+  size: number;
+  speedX: number;
+  speedY: number;
+}
+
 export const ParticleBackground = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
@@ -19,7 +27,7 @@ export const ParticleBackground = () => {
     resizeCanvas();
     window.addEventListener("resize", resizeCanvas);
 
-    const particles = [];
+    const particles: Particle[] = []; // Define the type here
     const particleCount = 100;
 
     for (let i = 0; i < particleCount; i++) {
