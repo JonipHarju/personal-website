@@ -103,65 +103,81 @@
   "techStack": [
     {
       "name": "React",
-      "icon": "FaReact",
+      "icon": "SiReact",
       "skillLevel": "Advanced",
       "experience": "2 years",
-      "lastUsed": "Currently using"
+      "lastUsed": "Currently using",
+      "howUsed": "Built dynamic and responsive user interfaces for several web applications. Created reusable components and implemented advanced state management using React hooks and Context API."
     },
     {
       "name": "Next.js",
       "icon": "SiNextdotjs",
       "skillLevel": "Advanced",
       "experience": "2 years",
-      "lastUsed": "Current using"
+      "lastUsed": "Currently using",
+      "howUsed": "Developed server-side rendered and statically generated websites for improved performance and SEO. Leveraged API routes and dynamic routing to handle backend functionality."
     },
     {
       "name": "TypeScript",
       "icon": "SiTypescript",
       "skillLevel": "Advanced",
       "experience": "2 years",
-      "lastUsed": "Currently using"
+      "lastUsed": "Currently using",
+      "howUsed": "Implemented static typing for JavaScript applications, reducing runtime errors and improving code maintainability. Created custom types, interfaces, and generics for complex data structures."
     },
     {
       "name": "JavaScript",
       "icon": "FaJs",
       "skillLevel": "Advanced",
       "experience": "3 years",
-      "lastUsed": "Currently using"
+      "lastUsed": "Currently using",
+      "howUsed": "Used JavaScript for front-end interactivity and back-end server logic. Built interactive web applications and optimized code performance in both browser and server environments."
     },
     {
       "name": "HTML",
       "icon": "FaHtml5",
       "skillLevel": "Advanced",
       "experience": "4 years",
-      "lastUsed": "Currently using"
+      "lastUsed": "Currently using",
+      "howUsed": "Crafted semantic HTML structures for various websites and web apps, ensuring accessibility and SEO optimization. Collaborated with design teams to turn mockups into clean HTML code."
     },
     {
       "name": "CSS",
       "icon": "FaCss3Alt",
       "skillLevel": "Advanced",
       "experience": "4 years",
-      "lastUsed": "Currently using§"
+      "lastUsed": "Currently using",
+      "howUsed": "Styled web applications using CSS and preprocessors like SASS. Implemented responsive design techniques and animations to enhance user experience across devices."
     },
     {
       "name": "Tailwind CSS",
       "icon": "SiTailwindcss",
       "skillLevel": "Intermediate",
       "experience": "0.5 years",
-      "lastUsed": "Currently using"
+      "lastUsed": "Currently using",
+      "howUsed": "Utilized utility-first Tailwind CSS for rapid UI development, reducing the need for custom CSS. Built scalable and consistent design systems with responsive layouts."
+    },
+    {
+      "name": "Firebase",
+      "icon": "SiFirebase",
+      "skillLevel": "Intermediate",
+      "experience": "0.5 years",
+      "lastUsed": "Currently using",
+      "howUsed": "Utilized utility-first Tailwind CSS for rapid UI development, reducing the need for custom CSS. Built scalable and consistent design systems with responsive layouts."
     },
     {
       "name": "Node.js",
-      "icon": "FaNodeJs",
-      "skillLevel": "advanced",
+      "icon": "SiNodedotjs",
+      "skillLevel": "Advanced",
       "experience": "2 years",
-      "lastUsed": "Currently using"
+      "lastUsed": "Currently using",
+      "howUsed": "Built RESTful APIs and real-time server applications with Node.js and Express. Implemented middleware for authentication, request validation, and error handling."
     },
     {
       "name": "PostgreSQL",
       "icon": "SiPostgresql",
       "skillLevel": "Intermediate",
-      "experience": "1 years",
+      "experience": "1 year",
       "lastUsed": "1 year ago"
     },
     {
@@ -169,21 +185,24 @@
       "icon": "SiSanity",
       "skillLevel": "Intermediate",
       "experience": "0.5 years",
-      "lastUsed": "Currently"
+      "lastUsed": "Currently using",
+      "howUsed": "Set up a headless CMS with Sanity.io to manage dynamic content for various web applications. Customized content schemas and integrated them with front-end applications via Sanity’s API."
     },
     {
       "name": "Material-UI",
       "icon": "SiMui",
       "skillLevel": "Intermediate",
       "experience": "1 year",
-      "lastUsed": "6 months ago"
+      "lastUsed": "6 months ago",
+      "howUsed": "Used Material-UI to build responsive and accessible web applications. Customized components and themes to align with specific branding and design requirements."
     },
     {
       "name": "Prisma",
       "icon": "SiPrisma",
       "skillLevel": "Intermediate",
       "experience": "0.5 years",
-      "lastUsed": "6 months ago"
+      "lastUsed": "6 months ago",
+      "howUsed": "Utilized Prisma ORM to interact with databases, enabling type-safe database queries. Integrated Prisma with Node.js applications to handle database operations smoothly."
     }
   ]
 }
