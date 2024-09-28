@@ -27,7 +27,7 @@ export const ParticleBackground = () => {
     resizeCanvas();
     window.addEventListener("resize", resizeCanvas);
 
-    const particles: Particle[] = []; // Define the type here
+    const particles: Particle[] = [];
     const particleCount = 100;
 
     for (let i = 0; i < particleCount; i++) {

@@ -4,7 +4,6 @@ import { Raleway } from "next/font/google";
 
 const raleway = Raleway({ subsets: ["latin"] });
 
-// execute next.js metadata below
 export const metadata: Metadata = {
   title: "Joni Harju personal portfolio",
   description: "A description.",

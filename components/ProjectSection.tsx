@@ -1,9 +1,9 @@
 import React from "react";
 import { ProjectItem } from "./ProjectItem";
-import content from "@/content.json"; // Import the content JSON
+import content from "@/content.json";
 
 export const ProjectsSection = () => {
-  const projects = content.projects; // Fetch projects from the JSON file
+  const projects = content.projects;
 
   return (
     <section id="projects" className="py-20 bg-black min-h-screen">

@@ -1,11 +1,9 @@
 import { ContactForm } from "./ContactForm";
 import content from "@/content.json";
 
-// Helper function to fetch content
 const getContent = () => content;
 
 export const ContactSection = () => {
-  // Fetch the contact content from content.json
   const contactContent = getContent().contact;
 
   return (
