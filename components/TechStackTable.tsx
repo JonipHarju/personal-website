@@ -51,56 +51,59 @@ export const TechStackTable = () => {
       id="tech"
       className="py-20 bg-gradient-to-b from-gray-900 to-black"
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 sm:px-0 overflow-x-auto">
         <h2 className="text-4xl font-bold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-500">
           Tech Stack & Expertise
         </h2>
-        <Table className="w-full">
-          <TableHeader>
-            <TableRow>
-              <TableHead className="w-[180px] text-pink-500">
-                Technology
-              </TableHead>
-              <TableHead className="text-pink-500">Skill Level</TableHead>
-              <TableHead className="text-pink-500">Experience</TableHead>
-              <TableHead className="text-pink-500">Last Used</TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody>
-            {techStack.map((tech) => {
-              const IconComponent = iconMap[tech.icon];
-              return (
-                <TableRow
-                  key={tech.name}
-                  className="hover:bg-gray-800/50 transition-colors duration-200"
-                >
-                  <TableCell className="font-medium text-gray-200">
-                    <div className="flex items-center space-x-2">
-                      {IconComponent && (
-                        <IconComponent className="text-2xl text-pink-500" />
-                      )}
-                      <span>{tech.name}</span>
-                    </div>
-                  </TableCell>
-                  <TableCell>
-                    <Badge
-                      variant="default"
-                      className="bg-gradient-to-r from-purple-500 to-pink-500 text-white"
-                    >
-                      {tech.skillLevel}
-                    </Badge>
-                  </TableCell>
-                  <TableCell className="text-gray-300">
-                    {tech.experience}
-                  </TableCell>
-                  <TableCell className="text-gray-300">
-                    {tech.lastUsed}
-                  </TableCell>
-                </TableRow>
-              );
-            })}
-          </TableBody>
-        </Table>
+        {/* Wrap the table in a div with overflow-x-auto */}
+        <div className="w-full overflow-x-auto">
+          <Table className="min-w-full table-auto">
+            <TableHeader>
+              <TableRow>
+                <TableHead className="w-[180px] text-pink-500">
+                  Technology
+                </TableHead>
+                <TableHead className="text-pink-500">Skill Level</TableHead>
+                <TableHead className="text-pink-500">Experience</TableHead>
+                <TableHead className="text-pink-500">Last Used</TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {techStack.map((tech) => {
+                const IconComponent = iconMap[tech.icon];
+                return (
+                  <TableRow
+                    key={tech.name}
+                    className="hover:bg-gray-800/50 transition-colors duration-200"
+                  >
+                    <TableCell className="font-medium text-gray-200">
+                      <div className="flex items-center space-x-2">
+                        {IconComponent && (
+                          <IconComponent className="text-2xl text-pink-500" />
+                        )}
+                        <span>{tech.name}</span>
+                      </div>
+                    </TableCell>
+                    <TableCell>
+                      <Badge
+                        variant="default"
+                        className="bg-gradient-to-r from-purple-500 to-pink-500 text-white"
+                      >
+                        {tech.skillLevel}
+                      </Badge>
+                    </TableCell>
+                    <TableCell className="text-gray-300">
+                      {tech.experience}
+                    </TableCell>
+                    <TableCell className="text-gray-300">
+                      {tech.lastUsed}
+                    </TableCell>
+                  </TableRow>
+                );
+              })}
+            </TableBody>
+          </Table>
+        </div>
       </div>
     </section>
   );
