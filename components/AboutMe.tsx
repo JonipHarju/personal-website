@@ -31,7 +31,7 @@ export const AboutMe = () => {
             <div className="relative w-48 h-48 flex-shrink-0">
               <div className="absolute inset-0 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 rounded-full animate-pulse"></div>
               <img
-                src="/placeholder.svg?height=192&width=192"
+                src="/juuh.jpeg"
                 alt={about.name}
                 className="rounded-full w-full h-full object-cover border-4 border-white relative z-10"
               />
