@@ -2,7 +2,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { ParticleBackground } from "@/components/ParticleBackground"; // Ensure correct path
+import { ParticleBackground } from "@/components/ParticleBackground";
 
 export const Navbar = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -37,7 +37,7 @@ export const Navbar = () => {
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
-      document.body.classList.remove("overflow-hidden"); // Clean up when the component unmounts
+      document.body.classList.remove("overflow-hidden");
     };
   }, [isMenuOpen]);
 
@@ -51,7 +51,7 @@ export const Navbar = () => {
     if (targetElement) {
       targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
     }
-    setIsMenuOpen(false); // Close mobile menu on click
+    setIsMenuOpen(false);
   };
 
   return (
