@@ -17,7 +17,7 @@ export const ClientAnimationWrapper = ({ children }) => {
     [0.8, 1, 1, 0.8]
   );
 
-  const springConfig = { stiffness: 100, damping: 30, restDelta: 0.001 };
+  const springConfig = { stiffness: 200, damping: 30, restDelta: 0.001 };
   const ySpring = useSpring(y, springConfig);
   const opacitySpring = useSpring(opacity, springConfig);
   const scaleSpring = useSpring(scale, springConfig);
