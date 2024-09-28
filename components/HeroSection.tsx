@@ -66,28 +66,6 @@ export const HeroSection = () => {
           </Button>
         </motion.div>
       </motion.div>
-
-      {/* Scroll-down Icon */}
-      <motion.div
-        initial={{ opacity: 0.01 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 2.2, duration: 1 }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-      >
-        <button
-          onClick={() =>
-            document.getElementById("about")?.scrollIntoView({
-              behavior: "smooth",
-            })
-          }
-          className="p-2 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 transition-all duration-300 ease-in-out transform hover:scale-110"
-        >
-          <ChevronDown
-            aria-label="Read more about me"
-            className="h-8 w-8 text-white"
-          />
-        </button>
-      </motion.div>
     </section>
   );
 };
