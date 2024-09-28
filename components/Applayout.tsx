@@ -21,7 +21,7 @@ export const AppLayout = () => {
     <div className="bg-gray-900 text-white min-h-screen">
       <ParticleBackground />
       <motion.div
-        className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 z-50"
+        className="fixed top-0 left-0 right-0 h-1 md:h-2 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 z-50"
         style={{ scaleX, transformOrigin: "0%" }}
       />
       <Navbar />

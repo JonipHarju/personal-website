@@ -1,4 +1,5 @@
 "use client";
+import { get } from "http";
 import React, { useEffect, useRef } from "react";
 
 interface Particle {
@@ -28,7 +29,12 @@ export const ParticleBackground = () => {
     window.addEventListener("resize", resizeCanvas);
 
     const particles: Particle[] = [];
-    const particleCount = 100;
+
+    const getParticleCount = () => {
+      if (window.innerWidth < 800) return 50;
+      return 100;
+    };
+    const particleCount = getParticleCount();
 
     for (let i = 0; i < particleCount; i++) {
       particles.push({
