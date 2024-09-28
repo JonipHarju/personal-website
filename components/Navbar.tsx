@@ -63,16 +63,17 @@ export const Navbar = () => {
         transition={{ duration: 0.3 }}
         className="hidden md:flex fixed top-4 left-0 right-0 z-50 justify-center"
       >
-        <div className="bg-gray-900 bg-opacity-90 backdrop-blur-md rounded-full px-6 py-3 shadow-lg border border-gray-800">
+        <div className="bg-gray-900 bg-opacity-90 backdrop-blur-md rounded-full px-6 py-3 shadow-md border border-gray-800">
           <ul className="flex space-x-6">
             {navItems.map((item) => (
               <li key={item.name}>
                 <a
                   href={item.href}
                   onClick={(e) => handleSmoothScroll(e, item.href)}
-                  className="text-gray-300 hover:text-purple-400 transition-colors duration-200"
+                  className="text-gray-300 hover:text-purple-400 transition-colors duration-200 px-4 py-2 block relative"
                 >
-                  <span className="text-sm">{item.name}</span>
+                  <span className="text-base">{item.name}</span>
+                  <div className="absolute left-0 bottom-0 h-[2px] bg-purple-400 w-full scale-x-0 hover:scale-x-100 transition-transform duration-300"></div>
                 </a>
               </li>
             ))}
