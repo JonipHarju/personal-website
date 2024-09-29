@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     "react",
     "next.js",
     "tailwind",
+    "javascript",
     "typescript",
     "sanity",
     "frontend",
