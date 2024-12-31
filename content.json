@@ -1,7 +1,7 @@
 {
   "heroSection": {
     "title": "Joni Harju",
-    "subtitle": "Software Engineer & Tech Enthusiast",
+    "subtitle": "Software Developer",
     "description": "Turning ideas into reality through code and innovation",
     "cta": "Discover My Journey"
   },
@@ -22,27 +22,36 @@
 
   "projects": [
     {
-      "title": "E-commerce Platform",
-      "description": "Developed a comprehensive full-stack e-commerce solution that revolutionizes online shopping experiences. The platform integrates real-time inventory tracking, secure payment gateways, and a dynamic recommendation engine to personalize user experiences. Built with scalability in mind, the platform supports thousands of concurrent users and handles large transaction volumes seamlessly. Additionally, a user-friendly admin panel was designed to manage products, orders, and customer interactions with ease. This solution has dramatically increased conversion rates and customer retention, proving to be a highly profitable investment for the client.",
+      "title": "Deadsetbit.com",
+      "description": "Developed a website for Dead Set Bit based on the given design. The site includes a CMS that I configured myself from the ground up. Site contains a admin view with authentication where the client can edit existing content, create new pages, and add new blog posts. The site is built with Next.js and Tailwind CSS, and the CMS is powered by Sanity.io.",
       "duration": "6 months",
-      "technologies": ["React", "Node.js", "Express", "MongoDB", "Stripe API"],
-      "liveLink": "https://ecommerce-platform.example.com",
+      "technologies": [
+        "React",
+        "Next.js",
+        "Sanity.io",
+        "Tailwind CSS",
+        "Vercel",
+        "ShadCn",
+        "TypeScript",
+        "JavaScript"
+      ],
+      "liveLink": "https://deadsetbit.com",
       "testimonial": {
-        "text": "Joni's work on our e-commerce platform was exceptional. He delivered beyond our expectations with an innovative solution that is both robust and easy to manage.",
-        "author": "Jane Smith",
-        "title": "CEO, TechRetail Inc."
+        "text": "Maijan kommentti tähän",
+        "author": "Maija Rinneheimo",
+        "title": "COO, Dead Set Bit Oy."
       }
     },
     {
-      "title": "AI-Powered Content Generator",
-      "description": "Created an innovative AI-driven tool that transforms content creation for websites and social media. The tool automates the process of generating SEO-friendly and industry-specific content, drastically reducing the time and effort needed for manual content creation. Utilizing machine learning algorithms, it personalizes content for the target audience while maintaining brand voice. The platform also features integrations with major content management systems, allowing for easy deployment and updates. The project included a powerful API that supports real-time content adjustments based on performance metrics, driving both engagement and conversions.",
+      "title": "The music blog",
+      "description": "A music review blog. The site's focus is on fast loading times, easy to read content and a clean ui that is simple to navigate. The site is built with Astro, which ensures fast loading times via shipping minimal amount of JavaScript to the client, and makes it easy to add new blog content with it's native support for markdown.",
       "duration": "8 months",
       "technologies": [
-        "Python",
-        "TensorFlow",
-        "React",
-        "FastAPI",
-        "PostgreSQL"
+        "Astro",
+        "Tailwind",
+        "Markdown",
+        "TypeScript",
+        "JavaScript"
       ],
       "liveLink": "https://example.com",
       "testimonial": {
@@ -116,6 +125,14 @@
       "experience": "2 years",
       "lastUsed": "Currently using",
       "howUsed": "Developed server-side rendered and statically generated websites for improved performance and SEO. Leveraged API routes and dynamic routing to handle backend functionality."
+    },
+    {
+      "name": "Astro",
+      "icon": "SiAstro",
+      "skillLevel": "Intermediate",
+      "experience": "0.5 years",
+      "lastUsed": "Currently using",
+      "howUsed": "Built SSG blog website with Astro, optimizing performance by shipping minimal JavaScript to the client. Utilized Astro’s built-in support for markdown to create blog content."
     },
     {
       "name": "TypeScript",

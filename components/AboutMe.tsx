@@ -12,17 +12,15 @@ export const AboutMe = () => {
   return (
     <section
       id="about"
-      className="py-24 px-6 bg-gradient-to-b from-gray-900 to-black overflow-hidden" // Added overflow-hidden to prevent overflow
+      className="py-24 px-6 bg-gradient-to-b from-gray-900 to-black overflow-hidden"
     >
       <div className="container mx-auto max-w-full lg:max-w-5xl">
-        {" "}
-        {/* Ensure the container doesn't cause overflow */}
         <h2 className="text-5xl font-bold mb-16 text-center bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-500">
           {about.title}
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start justify-center lg:items-stretch">
           <motion.div
-            initial={{ opacity: 0, x: -30 }} // Reduced x offset to avoid excessive off-screen movement
+            initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
@@ -93,7 +91,7 @@ export const AboutMe = () => {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: 30 }} // Reduced x offset here as well
+            initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}

@@ -183,6 +183,7 @@ import {
   SiWebpack,
   SiPrisma,
   SiNodedotjs,
+  SiAstro,
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import {
@@ -214,6 +215,7 @@ const iconMap = {
   SiPrisma,
   TbBrandNextjs,
   SiNodedotjs,
+  SiAstro,
 };
 
 export const TechStackTable = () => {
