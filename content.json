@@ -8,16 +8,15 @@
   "about": {
     "title": "About Me",
     "name": "Joni Harju",
-    "description": "As a passionate full-stack developer with 3 years of hands-on experience, I'm on a mission to push the boundaries of web development. My journey in tech is fueled by curiosity and a relentless drive to learn and create innovative solutions.",
+    "description": "I'm a software developer with over two years of experience creating efficient, scalable, and user-friendly web applications. I enjoy tackling challenges, learning new technologies, and building new things.",
     "contact": {
       "email": "jonipharju@gmail.com",
       "linkedin": "https://linkedin.com/in/exmaple",
       "github": "https://github.com/example",
       "resume": "/joni-resume.pdf"
     },
-    "background": "With a strong foundation in computer science and 3 years of professional experience, I specialize in building scalable web applications using modern technologies.",
-    "goals": "My goal is to contribute to innovative projects that push the boundaries of what's possible in web development. My goal is to contribute to innovative projects that push the boundaries of what's possible in web development.",
-    "currentFocus": "I'm currently diving deep into advanced state management techniques and serverless architectures. I'm currently diving deep into advanced state management techniques and serverless architectures."
+    "background": "I have professional experience building modern web applications, specializing in JavaScript/TypeScript and React. My work includes developing scalable headless websites, custom CMS solutions and fast SEO optimized static websites",
+    "interests": "Outside of coding, I enjoy playing guitar, exploring new tech, and diving into PC hardware and gaming."
   },
 
   "projects": [
