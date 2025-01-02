@@ -62,7 +62,8 @@ export const AboutMe = () => {
                     {about.contact.linkedin}
                   </a>
                 </li>
-                <li>
+                {/* comment out for now since there is not a lot to show */}
+                {/* <li>
                   <strong>GitHub:</strong>{" "}
                   <a
                     href={about.contact.github}
@@ -72,7 +73,7 @@ export const AboutMe = () => {
                   >
                     {about.contact.github}
                   </a>
-                </li>
+                </li> */}
               </ul>
               <Button
                 variant="outline"
