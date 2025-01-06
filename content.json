@@ -2,8 +2,8 @@
   "heroSection": {
     "title": "Joni Harju",
     "subtitle": "Software Developer",
-    "description": "Turning ideas into reality through code and innovation",
-    "cta": "Discover My Journey"
+    "description": "I build reliable solutions that work!",
+    "cta": "Learn More About Me"
   },
   "about": {
     "title": "About Me",
@@ -11,9 +11,9 @@
     "description": "I'm a software developer with over two years of experience creating efficient, scalable, and user-friendly web applications. I enjoy tackling challenges, learning new technologies, and building new things.",
     "contact": {
       "email": "jonipharju@gmail.com",
-      "linkedin": "https://linkedin.com/in/exmaple",
-      "github": "https://github.com/example",
-      "resume": "/joni-resume.pdf"
+      "linkedin": "https://www.linkedin.com/in/joni-h-89172a134/",
+
+      "resume": "/joni-harju-resume.pdf"
     },
     "background": "I have professional experience building modern web applications, specializing in JavaScript/TypeScript and React. My work includes developing scalable headless websites, custom CMS solutions and fast SEO optimized static websites",
     "interests": "Outside of coding, I enjoy playing guitar, exploring new tech, and diving into PC hardware and gaming."
@@ -21,67 +21,52 @@
 
   "projects": [
     {
-      "title": "Deadsetbit.com",
-      "description": "Developed a website for Dead Set Bit based on the given design. The site includes a CMS that I configured myself from the ground up. Site contains a admin view with authentication where the client can edit existing content, create new pages, and add new blog posts. The site is built with Next.js and Tailwind CSS, and the CMS is powered by Sanity.io.",
+      "title": "Dead Set Bit - Headless Website",
+      "description": "Built a server-side rendered website optimized for SEO using Next.js and Sanity CMS. Configured Google Analytics, Tag Manager, reCAPTCHA, and cookie consent. Set up a CMS for content management, enabling authenticated users to edit content, create new pages, and publish blog posts. Also contributed to design implementation with Figma prototypes.",
       "duration": "6 months",
       "technologies": [
         "React",
         "Next.js",
         "Sanity.io",
         "Tailwind CSS",
-        "Vercel",
-        "ShadCn",
         "TypeScript",
-        "JavaScript"
+        "JavaScript",
+        "Figma"
       ],
-      "liveLink": "https://deadsetbit.com",
-      "testimonial": {
-        "text": "Maijan kommentti tähän",
-        "author": "Maija Rinneheimo",
-        "title": "COO, Dead Set Bit Oy."
-      }
+      "liveLink": "https://deadsetbit.com"
     },
     {
-      "title": "The music blog",
-      "description": "A music review blog. The site's focus is on fast loading times, easy to read content and a clean ui that is simple to navigate. The site is built with Astro, which ensures fast loading times via shipping minimal amount of JavaScript to the client, and makes it easy to add new blog content with it's native support for markdown.",
-      "duration": "8 months",
+      "title": "Loan Application Client",
+      "description": "Developed a loan application website using Next.js and Material UI. Set up a custom backend using Strapi, PostgreSQL, and MinIO for managing content and media storage. Enabled content management in three languages, allowing easy creation and editing of pages via Strapi.",
+      "duration": "4 months",
       "technologies": [
-        "Astro",
-        "Tailwind",
-        "Markdown",
-        "TypeScript",
+        "React",
+        "Next.js",
+        "Material UI",
+        "Strapi",
+        "PostgreSQL",
+        "MinIO",
+        "Hetzner VPS"
+      ]
+    },
+    {
+      "title": "Codekatu Oy - Internal CMS Tool",
+      "description": "Designed and developed an internal CMS tool for managing content. Configured a PostgreSQL database using Prisma as the ORM and implemented user authentication with email functionalities, enabling the platform to send emails to customers efficiently.",
+      "duration": "5 months",
+      "technologies": [
+        "React",
+        "Next.js",
+        "PostgreSQL",
+        "Prisma",
+        "Node.js",
         "JavaScript"
-      ],
-      "liveLink": "https://example.com",
-      "testimonial": {
-        "text": "The AI content generator Joni developed has revolutionized our content creation process. We’ve been able to scale content production while maintaining a high level of quality.",
-        "author": "Mike Johnson",
-        "title": "Content Director, AI Innovations"
-      }
+      ]
     },
     {
-      "title": "Smart Home IoT Dashboard",
-      "description": "Engineered a real-time IoT dashboard that provides smart home device users with seamless control and monitoring. The dashboard features data visualization for energy consumption, device status, and real-time alerts for anomalies. Designed with an intuitive UI, the platform integrates with various IoT devices and popular voice assistants for easy control. Users can create custom automations based on device activity or time schedules, enhancing the home automation experience. This project not only improved user engagement but also increased the adoption of smart home technology among novice users.",
-      "duration": "7 months",
-      "technologies": ["React", "Node.js", "Socket.io", "MongoDB", "D3.js"],
-      "liveLink": "https://smarthome-dashboard.example.com",
-      "testimonial": {
-        "text": "Joni's IoT dashboard transformed our smart home ecosystem. It made managing devices so much easier for our users, leading to increased engagement and retention.",
-        "author": "Sarah Lee",
-        "title": "Product Manager, SmartLiving Tech"
-      }
-    },
-    {
-      "title": "Custom CRM System",
-      "description": "Developed a fully customized CRM system tailored for small businesses. The platform supports lead tracking, sales automation, and customer service workflows. Features include email integration, automated follow-ups, and detailed reporting dashboards to track team performance and sales funnels. The system also offers customization options for different industries, allowing businesses to tweak the CRM to their specific needs. By automating key processes, the CRM significantly reduced time spent on manual tasks, enabling teams to focus on more strategic initiatives.",
-      "duration": "10 months",
-      "technologies": ["Laravel", "MySQL", "React", "Redis", "AWS"],
-      "liveLink": "https://crm-platform.example.com",
-      "testimonial": {
-        "text": "The CRM system Joni built has streamlined our entire sales process. It’s intuitive, easy to use, and customizable, making it the perfect fit for our business.",
-        "author": "David Kim",
-        "title": "CEO, BizGrowth Solutions"
-      }
+      "title": "Dead Set Bit - Static Website",
+      "description": "Delivered an SEO-optimized static website built with vanilla HTML, CSS, and JavaScript. Configured Webpack from scratch for efficient asset bundling and production optimization. Contributed to the design implementation and created Figma prototypes.",
+      "duration": "3 months",
+      "technologies": ["HTML", "CSS", "JavaScript", "Webpack", "Figma"]
     }
   ],
 
@@ -115,7 +100,7 @@
       "skillLevel": "Advanced",
       "experience": "2 years",
       "lastUsed": "Currently using",
-      "howUsed": "Built dynamic and responsive user interfaces for several web applications. Created reusable components and implemented advanced state management using React hooks and Context API."
+      "howUsed": "Built dynamic and responsive user interfaces for several web applications."
     },
     {
       "name": "Next.js",
@@ -123,7 +108,7 @@
       "skillLevel": "Advanced",
       "experience": "2 years",
       "lastUsed": "Currently using",
-      "howUsed": "Developed server-side rendered and statically generated websites for improved performance and SEO. Leveraged API routes and dynamic routing to handle backend functionality."
+      "howUsed": "Developed server-side rendered and statically generated websites for improved performance and SEO. Used as my main tool for over 2 years."
     },
     {
       "name": "Astro",
@@ -139,7 +124,7 @@
       "skillLevel": "Advanced",
       "experience": "2 years",
       "lastUsed": "Currently using",
-      "howUsed": "Implemented static typing for JavaScript applications, reducing runtime errors and improving code maintainability. Created custom types, interfaces, and generics for complex data structures."
+      "howUsed": "Built headless websites, implemented strong type systems for frontend applications, and ensured type safety in various projects."
     },
     {
       "name": "JavaScript",
@@ -147,7 +132,7 @@
       "skillLevel": "Advanced",
       "experience": "3 years",
       "lastUsed": "Currently using",
-      "howUsed": "Used JavaScript for front-end interactivity and back-end server logic. Built interactive web applications and optimized code performance in both browser and server environments."
+      "howUsed": "Used JavaScript for front-end interactivity and back-end server logic."
     },
     {
       "name": "HTML",
@@ -155,7 +140,7 @@
       "skillLevel": "Advanced",
       "experience": "4 years",
       "lastUsed": "Currently using",
-      "howUsed": "Crafted semantic HTML structures for various websites and web apps, ensuring accessibility and SEO optimization. Collaborated with design teams to turn mockups into clean HTML code."
+      "howUsed": "Crafted semantic HTML structures for various websites."
     },
     {
       "name": "CSS",
@@ -163,7 +148,7 @@
       "skillLevel": "Advanced",
       "experience": "4 years",
       "lastUsed": "Currently using",
-      "howUsed": "Styled web applications using CSS and preprocessors like SASS. Implemented responsive design techniques and animations to enhance user experience across devices."
+      "howUsed": "Styled websites and implemented responsive design techniques and animations to enhance user experience across devices."
     },
     {
       "name": "Tailwind CSS",
@@ -171,7 +156,7 @@
       "skillLevel": "Intermediate",
       "experience": "0.5 years",
       "lastUsed": "Currently using",
-      "howUsed": "Utilized utility-first Tailwind CSS for rapid UI development, reducing the need for custom CSS. Built scalable and consistent design systems with responsive layouts."
+      "howUsed": "Styled websites and created style systems."
     },
     {
       "name": "Firebase",
@@ -179,7 +164,7 @@
       "skillLevel": "Intermediate",
       "experience": "0.5 years",
       "lastUsed": "Currently using",
-      "howUsed": "Utilized utility-first Tailwind CSS for rapid UI development, reducing the need for custom CSS. Built scalable and consistent design systems with responsive layouts."
+      "howUsed": "Used as a backend for a website to save contact form information."
     },
     {
       "name": "Node.js",
@@ -187,14 +172,15 @@
       "skillLevel": "Advanced",
       "experience": "2 years",
       "lastUsed": "Currently using",
-      "howUsed": "Built RESTful APIs and real-time server applications with Node.js and Express. Implemented middleware for authentication, request validation, and error handling."
+      "howUsed": "Built Node scripts for automating internal workflows."
     },
     {
       "name": "PostgreSQL",
       "icon": "SiPostgresql",
       "skillLevel": "Intermediate",
       "experience": "1 year",
-      "lastUsed": "1 year ago"
+      "lastUsed": "1 year ago",
+      "howUsed": "Used PostgreSQL as a database for a internal CMS tool."
     },
     {
       "name": "Sanity.io",
@@ -202,7 +188,7 @@
       "skillLevel": "Intermediate",
       "experience": "0.5 years",
       "lastUsed": "Currently using",
-      "howUsed": "Set up a headless CMS with Sanity.io to manage dynamic content for various web applications. Customized content schemas and integrated them with front-end applications via Sanity’s API."
+      "howUsed": "Setup Sanity from ground up and built a headless website for a customer."
     },
     {
       "name": "Material-UI",
@@ -210,7 +196,7 @@
       "skillLevel": "Intermediate",
       "experience": "1 year",
       "lastUsed": "6 months ago",
-      "howUsed": "Used Material-UI to build responsive and accessible web applications. Customized components and themes to align with specific branding and design requirements."
+      "howUsed": "Used Material-UI for styling and themeing."
     },
     {
       "name": "Prisma",
@@ -218,7 +204,7 @@
       "skillLevel": "Intermediate",
       "experience": "0.5 years",
       "lastUsed": "6 months ago",
-      "howUsed": "Utilized Prisma ORM to interact with databases, enabling type-safe database queries. Integrated Prisma with Node.js applications to handle database operations smoothly."
+      "howUsed": "Utilized Prisma as orm for a internal CMS tool"
     }
   ]
 }

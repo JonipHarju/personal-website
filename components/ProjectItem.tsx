@@ -33,7 +33,7 @@ export const ProjectItem = ({ project }) => {
         </div>
 
         {/* Testimonial Section */}
-        {project.testimonial && (
+        {/* {project.testimonial && (
           <div className="mb-4">
             <h4 className="text-xl font-semibold mb-2 text-pink-400">
               Testimonial:
@@ -45,25 +45,27 @@ export const ProjectItem = ({ project }) => {
               </footer>
             </blockquote>
           </div>
-        )}
+        )} */}
 
-        <div className="flex space-x-4">
-          <Button
-            variant="outline"
-            className="flex items-center justify-center border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-black transition-colors duration-300"
-          >
-            <a
-              href={project.liveLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center"
+        {project.liveLink ? (
+          <div className="flex space-x-4">
+            <Button
+              variant="outline"
+              className="flex items-center justify-center border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-black transition-colors duration-300"
             >
-              <ExternalLink className="mr-2 h-4 w-4" />{" "}
-              {/* Add a margin to separate icon and text */}
-              Preview
-            </a>
-          </Button>
-        </div>
+              <a
+                href={project.liveLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center"
+              >
+                <ExternalLink className="mr-2 h-4 w-4" />{" "}
+                {/* Add a margin to separate icon and text */}
+                Preview
+              </a>
+            </Button>
+          </div>
+        ) : null}
       </div>
     </ClientAnimationWrapper>
   );
