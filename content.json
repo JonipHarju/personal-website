@@ -22,7 +22,7 @@
   "projects": [
     {
       "title": "Dead Set Bit - Headless Website",
-      "description": "Built a server-side rendered website optimized for SEO using Next.js and Sanity CMS. Configured Google Analytics, Tag Manager, reCAPTCHA, and cookie consent. Set up a CMS for content management, enabling authenticated users to edit content, create new pages, and publish blog posts. Also contributed to design implementation with Figma prototypes.",
+      "description": "Built a server-side rendered website optimized for SEO using Next.js and Sanity CMS. Configured Google Analytics, Tag Manager and cookie consent. Set up Sanity CMS for content management from ground up, enabling authenticated users to edit content, create new pages, and publish blog posts. Also contributed to design implementation with Figma prototypes.",
       "duration": "6 months",
       "technologies": [
         "React",
@@ -51,7 +51,7 @@
     },
     {
       "title": "Codekatu Oy - Internal CMS Tool",
-      "description": "Designed and developed an internal CMS tool for managing content. Configured a PostgreSQL database using Prisma as the ORM and implemented user authentication with email functionalities, enabling the platform to send emails to customers efficiently.",
+      "description": "Designed and developed an internal CMS tool for managing content for customer projects with Next.js. Configured a PostgreSQL database using Prisma as the ORM and implemented user authentication with email functionalities.",
       "duration": "5 months",
       "technologies": [
         "React",
@@ -59,7 +59,8 @@
         "PostgreSQL",
         "Prisma",
         "Node.js",
-        "JavaScript"
+        "JavaScript",
+        "TypeScript"
       ]
     },
     {
