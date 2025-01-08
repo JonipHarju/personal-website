@@ -22,7 +22,7 @@
   "projects": [
     {
       "title": "Dead Set Bit - Headless Website",
-      "description": "Built a server-side rendered website optimized for SEO using Next.js and Sanity CMS. Configured Google Analytics, Tag Manager and cookie consent. Set up Sanity CMS for content management from ground up, enabling authenticated users to edit content, create new pages, and publish blog posts. Also contributed to design implementation with Figma prototypes.",
+      "description": "Built a server-side rendered headless website optimized for SEO using Next.js and Sanity CMS. Configured Google Analytics, Tag Manager and cookie consent. Set up Sanity CMS for content management from ground up, enabling authenticated users to edit content, create new pages, and publish blog posts. Also helped to further develop the design by creating Figma prototypes.",
       "duration": "6 months",
       "technologies": [
         "React",
