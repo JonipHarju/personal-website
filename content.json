@@ -1,0 +1,211 @@
+{
+  "heroSection": {
+    "title": "Joni Harju",
+    "subtitle": "Software Developer",
+    "description": "I build reliable solutions that work",
+    "cta": "Learn More About Me"
+  },
+  "about": {
+    "title": "About Me",
+    "name": "Joni Harju",
+    "description": "I'm a software developer with over two years of experience creating efficient, scalable, and user-friendly web applications. I enjoy tackling challenges, learning new technologies, and building new things.",
+    "contact": {
+      "email": "jonipharju@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/joni-h-89172a134/",
+
+      "resume": "/joni-harju-resume.pdf"
+    },
+    "background": "I have professional experience building modern web applications, specializing in JavaScript/TypeScript and React. My work includes developing scalable headless websites, custom CMS solutions and fast SEO optimized static websites",
+    "interests": "Outside of coding, I enjoy playing guitar, exploring new tech, and diving into PC hardware and gaming."
+  },
+
+  "projects": [
+    {
+      "title": "Dead Set Bit - Headless Website",
+      "description": "Built a server-side rendered headless website optimized for SEO using Next.js and Sanity CMS. Configured Google Analytics, Tag Manager and cookie consent. Set up Sanity CMS for content management from ground up, enabling authenticated users to edit content, create new pages, and publish blog posts. Also helped to further develop the design by creating Figma prototypes.",
+      "duration": "6 months",
+      "technologies": [
+        "React",
+        "Next.js",
+        "Sanity.io",
+        "Tailwind CSS",
+        "TypeScript",
+        "JavaScript",
+        "Figma"
+      ],
+      "liveLink": "https://deadsetbit.com"
+    },
+    {
+      "title": "Loan Application Client",
+      "description": "Developed a loan application website using Next.js and Material UI. Set up a custom backend using Strapi, PostgreSQL, and MinIO for managing content and media storage. Enabled content management in three languages, allowing easy creation and editing of pages via Strapi.",
+      "duration": "4 months",
+      "technologies": [
+        "React",
+        "Next.js",
+        "Material UI",
+        "Strapi",
+        "PostgreSQL",
+        "MinIO",
+        "Hetzner VPS"
+      ]
+    },
+    {
+      "title": "Codekatu Oy - Internal CMS Tool",
+      "description": "Designed and developed an internal CMS tool for managing content for customer projects with Next.js. Configured a PostgreSQL database using Prisma as the ORM and implemented user authentication with email functionalities.",
+      "duration": "5 months",
+      "technologies": [
+        "React",
+        "Next.js",
+        "PostgreSQL",
+        "Prisma",
+        "Node.js",
+        "JavaScript",
+        "TypeScript"
+      ]
+    },
+    {
+      "title": "Dead Set Bit - Static Website",
+      "description": "Delivered an SEO-optimized static website built with vanilla HTML, CSS, and JavaScript. Configured Webpack from scratch for efficient asset bundling and production optimization. Contributed to the design implementation and created Figma prototypes.",
+      "duration": "3 months",
+      "technologies": ["HTML", "CSS", "JavaScript", "Webpack", "Figma"]
+    }
+  ],
+
+  "contact": {
+    "title": "Get in Touch",
+    "contactInfoTitle": "Contact Information",
+    "contactPlatforms": [
+      {
+        "name": "GitHub",
+        "url": "https://github.com/johndoe",
+        "display": "github.com/johndoe"
+      },
+      {
+        "name": "Email",
+        "url": "mailto:john.doe@example.com",
+        "display": "john.doe@example.com"
+      },
+      {
+        "name": "test",
+        "url": "/",
+        "display": "example.com yep"
+      }
+    ],
+    "formTitle": "Feel free to reach out to me through any of these platforms."
+  },
+
+  "techStack": [
+    {
+      "name": "React",
+      "icon": "SiReact",
+      "skillLevel": "Advanced",
+      "experience": "2 years",
+      "lastUsed": "Currently using",
+      "howUsed": "Built dynamic and responsive user interfaces for several web applications."
+    },
+    {
+      "name": "Next.js",
+      "icon": "SiNextdotjs",
+      "skillLevel": "Advanced",
+      "experience": "2 years",
+      "lastUsed": "Currently using",
+      "howUsed": "Developed server-side rendered and statically generated websites for improved performance and SEO. Used as my main tool for over 2 years."
+    },
+    {
+      "name": "Astro",
+      "icon": "SiAstro",
+      "skillLevel": "Intermediate",
+      "experience": "0.5 years",
+      "lastUsed": "Currently using",
+      "howUsed": "Built SSG blog website with Astro, optimizing performance by shipping minimal JavaScript to the client. Utilized Astro’s built-in support for markdown to create blog content."
+    },
+    {
+      "name": "TypeScript",
+      "icon": "SiTypescript",
+      "skillLevel": "Advanced",
+      "experience": "2 years",
+      "lastUsed": "Currently using",
+      "howUsed": "Built headless websites, implemented strong type systems for frontend applications, and ensured type safety in various projects."
+    },
+    {
+      "name": "JavaScript",
+      "icon": "FaJs",
+      "skillLevel": "Advanced",
+      "experience": "3 years",
+      "lastUsed": "Currently using",
+      "howUsed": "Used JavaScript for front-end interactivity and back-end server logic."
+    },
+    {
+      "name": "HTML",
+      "icon": "FaHtml5",
+      "skillLevel": "Advanced",
+      "experience": "4 years",
+      "lastUsed": "Currently using",
+      "howUsed": "Crafted semantic HTML structures for various websites."
+    },
+    {
+      "name": "CSS",
+      "icon": "FaCss3Alt",
+      "skillLevel": "Advanced",
+      "experience": "4 years",
+      "lastUsed": "Currently using",
+      "howUsed": "Styled websites and implemented responsive design techniques and animations to enhance user experience across devices."
+    },
+    {
+      "name": "Tailwind CSS",
+      "icon": "SiTailwindcss",
+      "skillLevel": "Intermediate",
+      "experience": "0.5 years",
+      "lastUsed": "Currently using",
+      "howUsed": "Styled websites and created style systems."
+    },
+    {
+      "name": "Firebase",
+      "icon": "SiFirebase",
+      "skillLevel": "Intermediate",
+      "experience": "0.5 years",
+      "lastUsed": "Currently using",
+      "howUsed": "Used as a backend for a website to save contact form information."
+    },
+    {
+      "name": "Node.js",
+      "icon": "SiNodedotjs",
+      "skillLevel": "Advanced",
+      "experience": "2 years",
+      "lastUsed": "Currently using",
+      "howUsed": "Built Node scripts for automating internal workflows."
+    },
+    {
+      "name": "PostgreSQL",
+      "icon": "SiPostgresql",
+      "skillLevel": "Intermediate",
+      "experience": "1 year",
+      "lastUsed": "1 year ago",
+      "howUsed": "Used PostgreSQL as a database for a internal CMS tool."
+    },
+    {
+      "name": "Sanity.io",
+      "icon": "SiSanity",
+      "skillLevel": "Intermediate",
+      "experience": "0.5 years",
+      "lastUsed": "Currently using",
+      "howUsed": "Setup Sanity from ground up and built a headless website for a customer."
+    },
+    {
+      "name": "Material-UI",
+      "icon": "SiMui",
+      "skillLevel": "Intermediate",
+      "experience": "1 year",
+      "lastUsed": "6 months ago",
+      "howUsed": "Used Material-UI for styling and themeing."
+    },
+    {
+      "name": "Prisma",
+      "icon": "SiPrisma",
+      "skillLevel": "Intermediate",
+      "experience": "0.5 years",
+      "lastUsed": "6 months ago",
+      "howUsed": "Utilized Prisma as orm for a internal CMS tool"
+    }
+  ]
+}
