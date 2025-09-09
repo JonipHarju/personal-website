@@ -20,6 +20,7 @@
 
   const canvas = document.getElementById("particle-canvas");
   const ctx = canvas.getContext("2d");
+
   const mousePos = { x: -9999, y: -9999 };
   let particles = [];
 
@@ -71,11 +72,16 @@
   function drawParticles() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.fillStyle = "rgba(255,255,255,0.5)";
+
     particles.forEach((particle) => {
       ctx.beginPath();
+
       ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
+
       ctx.fill();
+
       const dist = distance(particle.x, particle.y, mousePos.x, mousePos.y);
+
       if (dist < maxDistance) {
         const angle = Math.atan2(
           particle.y - mousePos.y,
@@ -84,17 +90,24 @@
         particle.speedX += Math.cos(angle) * mouseRepelForce;
         particle.speedY += Math.sin(angle) * mouseRepelForce;
       }
+
       particle.x += particle.speedX;
       particle.y += particle.speedY;
+
       if (particle.x < 0 || particle.x > canvas.width) particle.speedX *= -1;
+
       if (particle.y < 0 || particle.y > canvas.height) particle.speedY *= -1;
+
       particle.speedX *= friction;
       particle.speedY *= friction;
+
       if (Math.abs(particle.speedX) < minSpeed)
         particle.speedX = minSpeed * Math.sign(particle.speedX);
+
       if (Math.abs(particle.speedY) < minSpeed)
         particle.speedY = minSpeed * Math.sign(particle.speedY);
     });
+
     requestAnimationFrame(drawParticles);
   }
   drawParticles();
