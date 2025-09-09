@@ -1,0 +1,109 @@
+---
+
+---
+
+<div style="position:fixed; inset:0; z-index:0; pointer-events:none;">
+  <canvas id="particle-canvas" style="width:100vw; height:100vh; display:block;"
+  ></canvas>
+</div>
+
+<script is:inline>
+  class Particle {
+    constructor(x, y, size, speedX, speedY) {
+      this.x = x;
+      this.y = y;
+      this.size = size;
+      this.speedX = speedX;
+      this.speedY = speedY;
+    }
+  }
+
+  const canvas = document.getElementById("particle-canvas");
+  const ctx = canvas.getContext("2d");
+  const mousePos = { x: -9999, y: -9999 };
+  let particles = [];
+
+  function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+  resizeCanvas();
+  window.addEventListener("resize", () => {
+    resizeCanvas();
+    createParticles();
+  });
+
+  function getParticleCount() {
+    return window.innerWidth < 800 ? 50 : 100;
+  }
+
+  function createParticles() {
+    particles = [];
+    const count = getParticleCount();
+    for (let i = 0; i < count; i++) {
+      particles.push(
+        new Particle(
+          Math.random() * canvas.width,
+          Math.random() * canvas.height,
+          Math.random() * 2 + 1,
+          Math.random() * 0.5 - 0.25,
+          Math.random() * 0.5 - 0.25
+        )
+      );
+    }
+  }
+  createParticles();
+
+  window.addEventListener("mousemove", (event) => {
+    mousePos.x = event.clientX;
+    mousePos.y = event.clientY;
+  });
+
+  function distance(x1, y1, x2, y2) {
+    return Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2);
+  }
+
+  const maxDistance = 100;
+  const mouseRepelForce = 0.05;
+  const friction = 0.99;
+  const minSpeed = 0.1;
+
+  function drawParticles() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = "rgba(255,255,255,0.5)";
+    particles.forEach((particle) => {
+      ctx.beginPath();
+      ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
+      ctx.fill();
+      const dist = distance(particle.x, particle.y, mousePos.x, mousePos.y);
+      if (dist < maxDistance) {
+        const angle = Math.atan2(
+          particle.y - mousePos.y,
+          particle.x - mousePos.x
+        );
+        particle.speedX += Math.cos(angle) * mouseRepelForce;
+        particle.speedY += Math.sin(angle) * mouseRepelForce;
+      }
+      particle.x += particle.speedX;
+      particle.y += particle.speedY;
+      if (particle.x < 0 || particle.x > canvas.width) particle.speedX *= -1;
+      if (particle.y < 0 || particle.y > canvas.height) particle.speedY *= -1;
+      particle.speedX *= friction;
+      particle.speedY *= friction;
+      if (Math.abs(particle.speedX) < minSpeed)
+        particle.speedX = minSpeed * Math.sign(particle.speedX);
+      if (Math.abs(particle.speedY) < minSpeed)
+        particle.speedY = minSpeed * Math.sign(particle.speedY);
+    });
+    requestAnimationFrame(drawParticles);
+  }
+  drawParticles();
+
+  // Reduced motion support
+  const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+  if (mediaQuery.matches) {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    window.removeEventListener("resize", resizeCanvas);
+    window.removeEventListener("mousemove", () => {});
+  }
+</script>
