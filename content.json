@@ -8,14 +8,16 @@
   "about": {
     "title": "About Me",
     "name": "Joni Harju",
-    "description": "I'm a software developer with over two years of experience creating efficient, scalable, and user-friendly web applications. I enjoy tackling challenges, learning new technologies, and building new things.",
+    "description": "I'm a software developer with over three of experience creating efficient, scalable, and user-friendly web applications.",
     "contact": {
       "email": "jonipharju@gmail.com",
       "linkedin": "https://www.linkedin.com/in/joni-h-89172a134/",
 
       "resume": "/joni-harju-resume.pdf"
     },
-    "background": "I have professional experience building modern web applications, specializing in JavaScript/TypeScript and React. My work includes developing scalable headless websites, custom CMS solutions and fast SEO optimized static websites",
+    "backgroundWork": "I have professional experience building modern web applications, specializing in JavaScript/TypeScript ecosystem. My work includes developing scalable headless websites, custom CMS solutions and fast SEO optimized static websites",
+    "backgroundSchool": "I am currently studying at Haaga Helia to major in Business Information Technology specializing in Software Development",
+
     "interests": "Outside of coding, I enjoy playing guitar, exploring new tech, and diving into PC hardware and gaming."
   },
 
