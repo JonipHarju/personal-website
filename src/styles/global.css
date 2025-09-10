@@ -1,7 +1,15 @@
 @import "tailwindcss";
 
+:root {
+  --particle-color: #4cff0580;
+}
+
 @theme {
-  --color-accent-100: #313;
+  --color-accent-100: #45a47b;
+}
+
+div {
+  background-color: #000000;
 }
 /*
 This website will use Tailwind to style and will have a color palette of four colors. 
