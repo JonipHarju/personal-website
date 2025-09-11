@@ -1,18 +1,37 @@
 @import "tailwindcss";
 
 :root {
-  --particle-color: #4cff0580;
+  --particle-color: rgba(0, 0, 0);
+}
+
+.dark {
+  --particle-color: rgba(36, 255, 160);
 }
 
 @theme {
-  --color-accent-100: #45a47b;
+  --color-accent: #24ffa0;
+  --color-accent-foreground: #000000;
+  --color-background: #ffffff;
+  --color-foreground: #000000;
+  --color-muted: #f5f5f5;
+  --color-muted-foreground: #484d57;
+  --color-border: #e5e7eb;
+
+  --color-dark-background: #000000;
+  --color-dark-foreground: #ffffff;
+  --color-dark-muted: #1a1a1a;
+  --color-dark-muted-foreground: #9ca3af;
+  --color-dark-border: #374151;
+  --color-dark-accent: #24ffa0;
+  --color-dark-accent-foreground: #000000;
 }
 
-div {
-  background-color: #000000;
+.dark {
+  --color-background: var(--color-dark-background);
+  --color-foreground: var(--color-dark-foreground);
+  --color-muted: var(--color-dark-muted);
+  --color-muted-foreground: var(--color-dark-muted-foreground);
+  --color-border: var(--color-dark-border);
+  --color-accent: var(--color-dark-accent);
+  --color-accent-foreground: var(--color-dark-accent-foreground);
 }
-/*
-This website will use Tailwind to style and will have a color palette of four colors. 
-
-
-*/
