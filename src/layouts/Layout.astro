@@ -12,7 +12,23 @@ import "../styles/global.css";
     <title>Joni Harju</title>
     <meta name="description" content="Personal website of Joni Harju" />
 
-    <!-- Prevent flash of incorrect theme -->
+    <!--Orbitron for big and small headings, and montserrat for base text  -->
+    <!-- TODO: when ready remove the unneeded weights and styles if needed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      href="https://fonts.gstatic.com/s/orbitron/v30/yMJRMIlzdpvBhQQL_Qq7dys.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Prevent flash light theme on page load if user has dark theme. -->
     <script is:inline>
       (function () {
         const theme = localStorage.getItem("theme");
@@ -28,7 +44,7 @@ import "../styles/global.css";
     </script>
   </head>
   <body
-    class="m-0 w-full h-full bg-background text-foreground transition-colors duration-200"
+    class="m-0 w-full h-full bg-background text-foreground transition-colors duration-200 font-heading"
   >
     <slot />
   </body>

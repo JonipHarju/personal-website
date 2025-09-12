@@ -4,12 +4,14 @@
 
 <button
   id="theme-toggle"
+  aria-label="Toggle light/dark theme"
   class="fixed top-4 right-4 z-50 p-3 bg-background/80 backdrop-blur-sm border border-border/50 rounded-lg hover:bg-muted transition-colors"
 >
   <svg
     id="sun-icon"
     class="h-5 w-5 text-foreground hidden"
     fill="currentColor"
+    ≈
     viewBox="0 0 24 24"
   >
     <path
@@ -29,6 +31,8 @@
 </button>
 
 <script is:inline>
+  // variable used to set the correct aria label to toggle button based on the theme state.
+
   function initTheme() {
     const theme = localStorage.getItem("theme");
     const systemPrefersDark = window.matchMedia(
@@ -39,6 +43,7 @@
 
     if (isDark) {
       document.documentElement.classList.add("dark");
+      // when dark theme is selected the button aria label should say switch to light and vice versa
     } else {
       document.documentElement.classList.remove("dark");
     }
