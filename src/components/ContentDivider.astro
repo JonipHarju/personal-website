@@ -1,0 +1,33 @@
+---
+const { name } = Astro.props;
+---
+
+<div class="flex items-center justify-center gap-4 mb-12">
+  <div class="flex items-center gap-4">
+    {/* Left line */}
+    <div
+      class="hidden sm:block w-12 h-px bg-gradient-to-r from-transparent to-accent"
+    >
+    </div>
+
+    {/* Category badge */}
+    <div
+      class="relative px-8 py-4 bg-background border-2 border-accent/20 rounded-full group hover:border-accent/30 transition-all duration-300"
+    >
+      {/* glow effect */}
+      <div
+        class="absolute inset-0 bg-background rounded-full group-hover:bg-accent/10 transition-all duration-300"
+      >
+      </div>
+      <h3 class="relative text-xl font-bold text-foreground font-baseText">
+        {name}
+      </h3>
+    </div>
+
+    {/* Right line */}
+    <div
+      class="hidden sm:block w-12 h-px bg-gradient-to-l from-transparent to-accent"
+    >
+    </div>
+  </div>
+</div>

@@ -5,27 +5,34 @@ import content from "../../content.json";
 <main
   class="relative min-h-screen flex items-center justify-center overflow-hidden"
 >
-  <div class="relative z-10 text-center px-4 font-heading">
-    <h1 class="text-6xl md:text-8xl font-bold mb-4 text-balance">
+  <div class="relative z-10 text-center px-4 font-heading max-w-6xl mx-auto">
+    <h1
+      class="text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-bold mb-4 text-balance animate-fadeIn"
+      style="animation-delay: 50ms"
+    >
       <span class="text-foreground">Joni</span>
       <span class="text-accent">Harju</span>
     </h1>
     <p
-      class="text-xl md:text-3xl text-muted-foreground font-light tracking-wide"
+      class="text-lg md:text-2xl lg:text-3xl xl:text-4xl text-muted-foreground font-light tracking-wide animate-fadeIn"
+      style="animation-delay: 150ms"
     >
       Software Developer
     </p>
 
-    <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+    <div
+      class="mt-8 flex flex-col sm:flex-row gap-4 justify-center animate-fadeIn"
+      style="animation-delay: 200ms"
+    >
       <a
         href="#about"
-        class="px-6 py-3 bg-accent text-accent-foreground rounded-lg font-medium hover:opacity-90 transition-opacity"
+        class="px-6 py-3 text-base bg-accent text-accent-foreground rounded-lg font-medium hover:opacity-90 transition-opacity font-baseText"
       >
         About Me
       </a>
       <a
         href="#projects"
-        class="px-6 py-3 border border-border text-foreground bg-background rounded-lg font-medium hover:bg-muted transition-colors"
+        class="px-6 py-3 text-base border border-border text-foreground bg-background rounded-lg font-medium hover:bg-muted transition-colors font-baseText"
       >
         View Projects
       </a>

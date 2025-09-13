@@ -1,7 +1,10 @@
 @import "tailwindcss";
 
 :root {
-  --particle-color: rgb(0, 0, 0);
+  --particle-color: #008554ba;
+}
+
+html {
 }
 
 .dark {
@@ -12,21 +15,27 @@
   --font-heading: "Orbitron", "Arial Black", "Helvetica Neue", Arial, sans-serif;
   --font-baseText: "Montserrat", system-ui, sans-serif;
 
-  --color-accent: #24ffa0;
-  --color-accent-foreground: #000000;
-  --color-background: #f3f3f3;
-  --color-foreground: #000000;
-  --color-muted: #f5f5f5;
-  --color-muted-foreground: #484d57;
-  --color-border: #c3c3c3;
+  /* --color-accent: hsl(0, 0%, 0%); */
+  --color-accent: #1a7f37;
+  /* #1a7f37 */
 
-  --color-dark-background: #000000;
-  --color-dark-foreground: #ffffff;
-  --color-dark-muted: #1a1a1a;
-  --color-dark-muted-foreground: #9ca3af;
-  --color-dark-border: #374151;
-  --color-dark-accent: #24ffa0;
-  --color-dark-accent-foreground: #000000;
+  /* --color-accent: #00a86b; */
+  --color-accent-foreground: hsl(0, 0%, 100%);
+  --color-background: hsl(0, 0%, 100%);
+  --color-foreground: hsl(0, 0%, 5%);
+  --color-muted: hsl(0, 0%, 94%);
+  --color-muted-foreground: hsl(220 15.35% 19.44%);
+  --color-border: hsl(0, 0%, 76%);
+  --color-border-light: hsl(0, 0%, 85%);
+
+  --color-dark-background: hsl(0, 0%, 0%);
+  --color-dark-foreground: hsl(0, 0%, 95%);
+  --color-dark-muted: hsl(0, 0%, 8%);
+  --color-dark-muted-foreground: hsl(220deg 16.64% 84.59%);
+  --color-dark-border: hsl(220, 13%, 26%);
+  --color-dark-border-light: hsl(220, 13%, 20%);
+  --color-dark-accent: hsl(158, 100%, 56%);
+  --color-dark-accent-foreground: hsl(0, 0%, 0%);
 }
 
 .dark {
@@ -35,6 +44,20 @@
   --color-muted: var(--color-dark-muted);
   --color-muted-foreground: var(--color-dark-muted-foreground);
   --color-border: var(--color-dark-border);
+  --color-border-light: var(--color-dark-border-light);
   --color-accent: var(--color-dark-accent);
   --color-accent-foreground: var(--color-dark-accent-foreground);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1.2s cubic-bezier(0.4, 0.2, 0.2, 1) both;
 }
