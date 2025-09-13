@@ -147,7 +147,7 @@
           "id": "dead-set-bit-headless",
           "title": "Dead Set Bit - Headless Website",
           "description": "Built a server-side rendered headless website optimized for SEO using Next.js and Sanity CMS. Configured Google Analytics, Tag Manager and cookie consent. Set up Sanity CMS for content management from ground up, enabling authenticated users to edit content, create new pages, and publish blog posts. Also helped to further develop the design by creating Figma prototypes.",
-          "image": "placeholder.png",
+          "image": "deadsetbit.png",
           "technologies": [
             "React",
             "Next.js",
@@ -158,10 +158,29 @@
             "Figma"
           ],
           "links": {
-            "preview": "https://deadsetbit.com/",
-            "github": "https://deadsetbit.com/"
+            "preview": "https://deadsetbit.com/"
           }
         },
+        {
+          "id": "codekatu-website",
+          "title": "Codekatu Oy - Headless website",
+          "description": "Built a fully headless website for Codekatu Oy using Next.js, Strapi CMS, and PostgreSQL. Set up Strapi from scratch for structured content management and integrated MinIO (S3-compatible) for media storage. Configured and deployed the solution on a Hetzner VPS. Designed the website using Figma and implemented styling with Tailwind CSS",
+          "image": "codekatu.png",
+          "technologies": [
+            "React",
+            "Next.js",
+            "Strapi",
+            "Tailwind CSS",
+            "TypeScript",
+            "JavaScript",
+            "Figma",
+            "Hetzner"
+          ],
+          "links": {
+            "preview": "https://codekatu.com/"
+          }
+        },
+
         {
           "id": "loan-application-client",
           "title": "Loan Application Client",
@@ -204,7 +223,7 @@
           "id": "dead-set-bit-static",
           "title": "Dead Set Bit - Static Website",
           "description": "Delivered an SEO-optimized static website built with vanilla HTML, CSS, and JavaScript. Configured Webpack from scratch for efficient asset bundling and production optimization. Contributed to the design implementation and created Figma prototypes.",
-          "image": "placeholder.png",
+          "image": "deadsetbit-old.png",
           "technologies": ["HTML", "CSS", "JavaScript", "Webpack", "Figma"],
           "links": {
             "preview": "",
