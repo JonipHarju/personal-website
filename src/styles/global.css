@@ -15,8 +15,10 @@ html {
   --font-heading: "Orbitron", "Arial Black", "Helvetica Neue", Arial, sans-serif;
   --font-baseText: "Montserrat", system-ui, sans-serif;
 
-  --color-accent: #1a7f37;
-  --color-accent-foreground: hsl(0, 0%, 100%);
+  /* --color-accent: #387f99; */
+  --color-accent-text: #2c6b82;
+  --color-accent: #499dbc;
+  --color-accent-foreground: hsl(0, 0%, 0%);
   --color-background: hsl(0, 0%, 100%);
   --color-foreground: hsl(0, 0%, 5%);
   --color-muted: hsl(0, 0%, 94%);
@@ -32,6 +34,7 @@ html {
   --color-dark-border-light: hsl(220, 13%, 20%);
   --color-dark-accent: hsl(158, 100%, 56%);
   --color-dark-accent-foreground: hsl(0, 0%, 0%);
+  --color-dark-accent-text: hsl(158, 100%, 56%);
 }
 
 .dark {
@@ -43,6 +46,7 @@ html {
   --color-border-light: var(--color-dark-border-light);
   --color-accent: var(--color-dark-accent);
   --color-accent-foreground: var(--color-dark-accent-foreground);
+  --color-accent-text: var(--color-dark-accent-text);
 }
 
 @keyframes fadeIn {

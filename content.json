@@ -37,7 +37,7 @@
             "level": "Advanced",
             "experience": "2 years",
             "description": "Developed server-side rendered and statically generated websites for improved performance and SEO. Used as my main tool for over 2 years.",
-            "icon": "nextdotjs"
+            "icon": "nextjs"
           },
           {
             "name": "Astro",
