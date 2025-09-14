@@ -31,8 +31,6 @@
 </button>
 
 <script is:inline>
-  // variable used to set the correct aria label to toggle button based on the theme state.
-
   function initTheme() {
     const theme = localStorage.getItem("theme");
     const systemPrefersDark = window.matchMedia(
@@ -79,10 +77,8 @@
     updateIcons(newTheme);
   }
 
-  // Initialize theme on page load
   initTheme();
 
-  // Add click listener
   document
     .getElementById("theme-toggle")
     ?.addEventListener("click", toggleTheme);
