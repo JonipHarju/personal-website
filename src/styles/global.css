@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --particle-color: #5bcbf4;
+  --particle-color: oklch(0.75 0.12 210);
 }
 
 html {
 }
 
 .dark {
-  --particle-color: rgba(36, 255, 160);
+  --particle-color: oklch(0.9 0.25 155);
 }
 
 @theme {
@@ -16,25 +16,25 @@ html {
   --font-baseText: "Montserrat", system-ui, sans-serif;
 
   /* --color-accent: #387f99; */
-  --color-accent-text: #2c6b82;
-  --color-accent: #499dbc;
-  --color-accent-foreground: hsl(0, 0%, 0%);
-  --color-background: hsl(0, 0%, 100%);
-  --color-foreground: hsl(0, 0%, 5%);
-  --color-muted: hsl(0, 0%, 94%);
-  --color-muted-foreground: hsl(220 15.35% 19.44%);
-  --color-border: hsl(0, 0%, 76%);
-  --color-border-light: hsl(0, 0%, 85%);
+  --color-accent-text: oklch(0.45 0.08 210);
+  --color-accent: oklch(0.62 0.08 210);
+  --color-accent-foreground: oklch(0 0 0);
+  --color-background: oklch(1 0 0);
+  --color-foreground: oklch(0.15 0 0);
+  --color-muted: oklch(0.94 0 0);
+  --color-muted-foreground: oklch(0.35 0.02 250);
+  --color-border: oklch(0.76 0 0);
+  --color-border-light: oklch(0.85 0 0);
 
-  --color-dark-background: hsl(0, 0%, 0%);
-  --color-dark-foreground: hsl(0, 0%, 95%);
-  --color-dark-muted: hsl(0, 0%, 8%);
-  --color-dark-muted-foreground: hsl(220deg 16.64% 84.59%);
-  --color-dark-border: hsl(220, 13%, 26%);
-  --color-dark-border-light: hsl(220, 13%, 20%);
-  --color-dark-accent: hsl(158, 100%, 56%);
-  --color-dark-accent-foreground: hsl(0, 0%, 0%);
-  --color-dark-accent-text: hsl(158, 100%, 56%);
+  --color-dark-background: oklch(0 0 0);
+  --color-dark-foreground: oklch(0.95 0 0);
+  --color-dark-muted: oklch(0.15 0 0);
+  --color-dark-muted-foreground: oklch(0.82 0.02 250);
+  --color-dark-border: oklch(0.35 0.02 250);
+  --color-dark-border-light: oklch(0.28 0.02 250);
+  --color-dark-accent: oklch(0.8 0.15 155);
+  --color-dark-accent-foreground: oklch(0 0 0);
+  --color-dark-accent-text: oklch(0.8 0.15 155);
 }
 
 .dark {
