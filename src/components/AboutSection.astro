@@ -70,7 +70,7 @@ import profileImage from "../assets/joni.webp";
           <a
             href="/cv.pdf"
             download
-            class="inline-flex items-center gap-2 px-4 py-2 text-sm bg-accent text-accent-foreground rounded-lg hover:opacity-90 transition-opacity max-w-fit mx-auto font-baseText"
+            class="inline-flex items-center gap-2 px-4 py-2 text-sm bg-accent text-accent-foreground rounded-lg hover:opacity-90 transition-all duration-200 max-w-fit mx-auto font-baseText"
           >
             <svg
               class="w-4 h-4"
@@ -115,7 +115,9 @@ import profileImage from "../assets/joni.webp";
           >
             Interests
           </h4>
-          <div class="flex flex-wrap gap-2">
+          <div
+            class="flex flex-wrap gap-2 bg-background transition-colors duration-200"
+          >
             {
               [
                 "Web Development",
@@ -127,7 +129,7 @@ import profileImage from "../assets/joni.webp";
                 "Music",
                 "Guitars",
               ].map((interest) => (
-                <span class="px-3 py-1 bg-muted text-muted-foreground rounded-full text-sm border border-border">
+                <span class="px-3 py-1 bg-accent/10 transition-colors duration-200 text-muted-foreground rounded-full text-sm border border-border ">
                   {interest}
                 </span>
               ))

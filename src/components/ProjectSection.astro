@@ -34,7 +34,7 @@ const typedContent = content as ContentData;
                 const projectImage = await getProjectImage(project.image);
                 return (
                   <div class="group">
-                    <div class="bg-background rounded-2xl border border-border-light overflow-hidden hover:border-border transition-colors duration-300 h-full">
+                    <div class="bg-background/90 rounded-2xl border border-accent/20 hover:border-accent/30 overflow-hidden  transition-colors duration-300 h-full">
                       <div class="relative aspect-video overflow-hidden">
                         <Image
                           src={projectImage}
@@ -48,17 +48,17 @@ const typedContent = content as ContentData;
                           {project.title}
                         </h4>
 
-                        <p class="text-muted-foreground leading-relaxed mb-6 text-sm">
+                        <p class="text-muted-foreground leading-relaxed mb-6">
                           {project.description}
                         </p>
 
                         <div class="mb-6">
-                          <p class="text-sm font-semibold text-foreground mb-3">
+                          <p class="text-lg lg:text-xl font-semibold text-accent mb-3">
                             Tech Stack
                           </p>
                           <div class="flex flex-wrap gap-2">
                             {project.technologies.map((tech: string) => (
-                              <span class="px-3 py-1 bg-muted text-muted-foreground rounded-full text-sm border border-border">
+                              <span class="px-3 py-1 bg-accent/10 text-muted-foreground rounded-full text-sm border border-border">
                                 {tech}
                               </span>
                             ))}
