@@ -5,7 +5,7 @@ console.log("im executed on build time only once on the server! :D");
 ---
 
 <!doctype html>
-<html lang="en" class="transition-colors duration-200">
+<html lang="en" class="">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -45,9 +45,7 @@ console.log("im executed on build time only once on the server! :D");
       })();
     </script>
   </head>
-  <body
-    class="m-0 w-full h-full bg-background text-foreground transition-colors duration-200 font-baseText"
-  >
+  <body class="m-0 w-full h-full bg-background text-foreground font-baseText">
     <slot />
   </body>
 </html>

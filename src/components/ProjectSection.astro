@@ -11,7 +11,7 @@ const typedContent = content as ContentData;
 <section id="projects" class="py-20 px-4">
   <div class="max-w-6xl mx-auto">
     <!-- Section Header -->
-    <div class="text-center mb-20 bg-background transition-colors duration-200">
+    <div class="text-center mb-20 bg-background">
       <h2 class="text-4xl md:text-5xl font-bold text-accent mb-6 font-heading">
         {typedContent.projects.title}
       </h2>
@@ -34,7 +34,7 @@ const typedContent = content as ContentData;
                 const projectImage = await getProjectImage(project.image);
                 return (
                   <div class="group">
-                    <div class="bg-background/90 rounded-2xl border border-accent/20 hover:border-accent/30 overflow-hidden  transition-colors duration-300 h-full">
+                    <div class="bg-background/90 rounded-2xl border border-accent/20 hover:border-accent/30 overflow-hidden   duration-300 h-full">
                       <div class="relative aspect-video overflow-hidden">
                         <Image
                           src={projectImage}
@@ -73,7 +73,7 @@ const typedContent = content as ContentData;
                                 href={project.links.preview}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                class="inline-flex items-center gap-2 px-6 py-3 bg-accent text-accent-foreground rounded-xl font-medium hover:opacity-90 transition-opacity duration-200 font-baseText"
+                                class="inline-flex items-center gap-2 px-6 py-3 bg-accent text-accent-foreground rounded-xl font-medium hover:opacity-90 transition-opacity duration-200  font-baseText"
                               >
                                 <svg
                                   class="w-5 h-5"
@@ -98,7 +98,7 @@ const typedContent = content as ContentData;
                                 href={project.links.github}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                class="inline-flex items-center gap-2 text-foreground hover:text-muted-foreground transition-colors text-sm font-medium border border-border-light px-4 py-3 rounded-xl hover:bg-muted font-baseText"
+                                class="inline-flex items-center gap-2 text-foreground hover:text-muted-foreground  text-sm font-medium border border-border-light px-4 py-3 rounded-xl hover:bg-muted font-baseText"
                               >
                                 <svg
                                   class="w-4 h-4"
@@ -134,7 +134,7 @@ const typedContent = content as ContentData;
                 const projectImage = await getProjectImage(project.image);
                 return (
                   <div class="group">
-                    <div class="bg-background rounded-2xl border border-border-light overflow-hidden hover:border-border transition-colors duration-300">
+                    <div class="bg-background rounded-2xl border border-border-light overflow-hidden hover:border-border  duration-300">
                       <div class="relative aspect-video overflow-hidden">
                         <Image
                           src={projectImage}
@@ -173,7 +173,7 @@ const typedContent = content as ContentData;
                                 href={project.links.preview}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                class="inline-flex items-center gap-2 px-6 py-3 bg-accent text-accent-foreground rounded-xl font-medium hover:opacity-90 transition-opacity duration-200 font-baseText"
+                                class="inline-flex items-center gap-2 px-6 py-3 bg-accent text-accent-foreground rounded-xl font-medium hover:opacity-90 transition-opacity duration-200  font-baseText"
                               >
                                 <svg
                                   class="w-5 h-5"
@@ -198,7 +198,7 @@ const typedContent = content as ContentData;
                                 href={project.links.github}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                class="inline-flex items-center gap-2 text-foreground hover:text-muted-foreground transition-colors text-sm font-medium border border-border-light px-4 py-3 rounded-xl hover:bg-muted font-baseText"
+                                class="inline-flex items-center gap-2 text-foreground hover:text-muted-foreground  text-sm font-medium border border-border-light px-4 py-3 rounded-xl hover:bg-muted font-baseText"
                               >
                                 <svg
                                   class="w-4 h-4"
