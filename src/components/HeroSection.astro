@@ -24,18 +24,33 @@ import content from "../../content.json";
       class="mt-8 flex flex-col sm:flex-row gap-4 justify-center animate-fadeIn"
       style="animation-delay: 200ms"
     >
-      <a
-        href="#about"
-        class="px-6 py-3 transition-all text-base bg-accent text-accent-foreground rounded-lg font-medium hover:opacity-90 duration-200 font-baseText"
+      <button
+        id="aboutButton"
+        class="button.hero px-6 py-3 transition-all text-base bg-accent text-accent-foreground rounded-lg font-medium hover:opacity-90 duration-200 font-baseText"
       >
         About Me
-      </a>
-      <a
-        href="#projects"
-        class="px-6 py-3 text-base border border-border text-foreground bg-background rounded-lg font-medium hover:bg-muted font-baseText"
+      </button>
+      <button
+        id="projectsButton"
+        class="button.hero px-6 py-3 text-base border border-border text-foreground bg-background rounded-lg font-medium hover:bg-muted font-baseText"
       >
         View Projects
-      </a>
+      </button>
     </div>
   </div>
 </main>
+
+<script>
+  const aboutButton = document.getElementById("aboutButton");
+  const projectButton = document.getElementById("projectsButton");
+
+  aboutButton?.addEventListener("click", () => {
+    const element = document.getElementById("about");
+    element?.scrollIntoView({ behavior: "smooth" });
+  });
+
+  projectButton?.addEventListener("click", () => {
+    const element = document.getElementById("projects");
+    element?.scrollIntoView({ behavior: "smooth" });
+  });
+</script>
