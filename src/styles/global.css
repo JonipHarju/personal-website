@@ -9,11 +9,20 @@
     border-color 0.2s ease;
 }
 
-html {
-}
-
 .dark {
   --particle-color: oklch(0.9 0.25 155);
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-accent-foreground);
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: var(--color-accent);
+  color: var(--color-accent-foreground);
+  text-shadow: none;
 }
 
 @theme {
