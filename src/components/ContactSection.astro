@@ -3,7 +3,7 @@
 ---
 
 <section id="contact" class="py-20 px-4">
-  <div class="max-w-4xl mx-auto text-center">
+  <div class="max-w-4xl mx-auto text-center contact-animate">
     <div class="mb-12">
       <h2 class="text-4xl md:text-5xl font-bold text-accent mb-4 font-heading">
         Get In Touch
@@ -101,3 +101,21 @@
     </div>
   </div>
 </section>
+
+<script is:inline>
+  document.addEventListener("DOMContentLoaded", () => {
+    const el = document.querySelector(".contact-animate");
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+    observer.observe(el);
+  });
+</script>
