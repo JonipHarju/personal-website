@@ -77,6 +77,131 @@
   animation: fadeIn 1.2s cubic-bezier(0.4, 0.2, 0.2, 1) both;
 }
 
+/* Enhanced About Animation */
+.about-animate {
+  opacity: 0;
+  transform: translateY(60px) scale(0.95);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about-animate.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Projects - Swipe from Left */
+.projects-title-animate {
+  opacity: 0;
+  transform: translateX(-80px);
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-animate {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-delay-0 {
+  transition-delay: 0.1s;
+}
+.project-delay-1 {
+  transition-delay: 0.2s;
+}
+.project-delay-2 {
+  transition-delay: 0.3s;
+}
+
+.projects-title-animate.visible,
+.project-animate.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Skills - Scattered Rise from Bottom */
+.skills-title-animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.skill-animate {
+  opacity: 0;
+  transform: translateY(80px) rotate(-5deg);
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.skill-delay-0 {
+  transition-delay: 0.1s;
+  transform: translateY(80px) rotate(3deg);
+}
+.skill-delay-1 {
+  transition-delay: 0.2s;
+  transform: translateY(90px) rotate(-2deg);
+}
+.skill-delay-2 {
+  transition-delay: 0.3s;
+  transform: translateY(75px) rotate(4deg);
+}
+.skill-delay-3 {
+  transition-delay: 0.4s;
+  transform: translateY(85px) rotate(-3deg);
+}
+.skill-delay-4 {
+  transition-delay: 0.5s;
+  transform: translateY(70px) rotate(2deg);
+}
+.skill-delay-5 {
+  transition-delay: 0.6s;
+  transform: translateY(95px) rotate(-4deg);
+}
+
+.skills-title-animate.visible,
+.skill-animate.visible {
+  opacity: 1;
+  transform: translateY(0) rotate(0deg);
+}
+
+/* Contact - Simple Fade Up */
+.contact-animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Subtitles - Gentle Fade Up */
+.projects-subtitle-animate,
+.skills-subtitle-animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0.2s;
+}
+
+.projects-subtitle-animate.visible,
+.skills-subtitle-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Content Dividers - Scale and Fade */
+.content-divider-animate {
+  opacity: 0;
+  transform: scale(0.9) translateY(20px);
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0.1s;
+}
+
+.content-divider-animate.visible {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
 .about-animate {
   opacity: 0;
   transform: translateY(32px);
