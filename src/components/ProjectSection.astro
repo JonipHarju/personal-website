@@ -12,11 +12,13 @@ const typedContent = content as ContentData;
   <div class="max-w-6xl mx-auto">
     <!-- Section Header -->
     <div class="text-center mb-20 bg-background">
-      <h2 class="text-4xl md:text-5xl font-bold text-accent mb-6 font-heading">
+      <h2
+        class="projects-title-animate text-4xl md:text-5xl font-bold text-accent mb-6 font-heading"
+      >
         {typedContent.projects.title}
       </h2>
       <p
-        class="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed font-baseText"
+        class="projects-subtitle-animate text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed font-baseText"
       >
         {typedContent.projects.subtitle}
       </p>
@@ -30,10 +32,12 @@ const typedContent = content as ContentData;
 
           <div class="grid md:grid-cols-2 gap-14">
             {typedContent.projects.professionalWork.list.map(
-              async (project: Project) => {
+              async (project: Project, index: number) => {
                 const projectImage = await getProjectImage(project.image);
                 return (
-                  <div class="group">
+                  <div
+                    class={`group project-animate project-delay-${index % 3}`}
+                  >
                     <div class="bg-background/90 rounded-2xl border border-accent/20 hover:border-accent/30 overflow-hidden   duration-300 h-full">
                       <div class="relative aspect-video overflow-hidden">
                         <Image
@@ -130,10 +134,12 @@ const typedContent = content as ContentData;
 
           <div class="grid md:grid-cols-2 gap-8">
             {typedContent.projects.personalProjects.list.map(
-              async (project: Project) => {
+              async (project: Project, index: number) => {
                 const projectImage = await getProjectImage(project.image);
                 return (
-                  <div class="group">
+                  <div
+                    class={`group project-animate project-delay-${index % 3}`}
+                  >
                     <div class="bg-background rounded-2xl border border-border-light overflow-hidden hover:border-border  duration-300">
                       <div class="relative aspect-video overflow-hidden">
                         <Image
@@ -223,3 +229,26 @@ const typedContent = content as ContentData;
     }
   </div>
 </section>
+
+<script is:inline>
+  document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    document
+      .querySelectorAll(
+        ".project-animate, .projects-title-animate, .projects-subtitle-animate, .content-divider-animate"
+      )
+      .forEach((el) => {
+        observer.observe(el);
+      });
+  });
+</script>
