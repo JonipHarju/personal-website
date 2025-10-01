@@ -4,9 +4,7 @@ import profileImage from "../assets/joni.webp";
 ---
 
 <section id="about" class="py-16 px-4">
-  <div
-    class="max-w-5xl mx-auto about-animate opacity-0 translate-y-8 transition-all duration-700"
-  >
+  <div class="max-w-5xl mx-auto about-animate">
     <div class="text-center mb-12">
       <h2
         class="text-3xl md:text-4xl lg:text-5xl font-bold text-accent mb-4 font-heading"
@@ -142,18 +140,19 @@ import profileImage from "../assets/joni.webp";
 </section>
 
 <script is:inline>
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-          observer.unobserve(entry.target); // Animate only once
-        }
-      });
-    },
-    { threshold: 0.2 }
-  );
-
-  const about = document.querySelector(".about-animate");
-  if (about) observer.observe(about);
+  document.addEventListener("DOMContentLoaded", () => {
+    const el = document.querySelector(".about-animate");
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }
+    );
+    observer.observe(el);
+  });
 </script>
