@@ -228,12 +228,15 @@
     mobileMenu?.classList.remove("open");
     menuIcon?.classList.remove("hidden");
     closeIcon?.classList.add("hidden");
+    document.body.style.overflow = "";
   }
 
   menuBtn?.addEventListener("click", () => {
+    const isOpening = !mobileMenu?.classList.contains("open");
     mobileMenu?.classList.toggle("open");
     menuIcon?.classList.toggle("hidden");
     closeIcon?.classList.toggle("hidden");
+    document.body.style.overflow = isOpening ? "hidden" : "";
   });
 
   document.querySelectorAll('.mobile-link, a[href="#home"]').forEach((link) => {
