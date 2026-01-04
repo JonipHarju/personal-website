@@ -24,6 +24,7 @@
   const mousePos = { x: -9999, y: -9999 };
   let particles = [];
   let lastWidth = window.innerWidth;
+  let resizeTimeout;
 
   function resizeCanvas() {
     canvas.width = window.innerWidth;
@@ -34,17 +35,16 @@
   window.addEventListener("resize", () => {
     const currentWidth = window.innerWidth;
 
-    // resize canvas if width changes
+    // resize canvas immediately
     if (currentWidth !== lastWidth) {
       lastWidth = currentWidth;
       resizeCanvas();
 
-      // recreate particles if count should change
-      const currentCount = particles.length;
-      const expectedCount = getParticleCount();
-      if (currentCount !== expectedCount) {
+      // debounce particle recreation
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(() => {
         createParticles();
-      }
+      }, 150);
     }
   });
 
