@@ -1,0 +1,252 @@
+---
+
+---
+
+<nav
+  id="navbar"
+  class="fixed top-0 left-0 right-0 z-50 transition-[background-color,box-shadow] duration-300"
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+    <div class="flex items-center justify-between">
+      <a
+        href="#home"
+        class="text-2xl font-heading font-bold text-foreground hover:text-accent transition-colors"
+        >JH</a
+      >
+      <!-- desktop links -->
+      <div class="hidden lg:flex items-center gap-6">
+        <a
+          href="#about"
+          class="text-muted-foreground font-medium hover:text-accent transition-colors"
+          >About</a
+        >
+        <a
+          href="#projects"
+          class="text-muted-foreground font-medium hover:text-accent transition-colors"
+          >Projects</a
+        >
+        <a
+          href="#skills"
+          class="text-muted-foreground font-medium hover:text-accent transition-colors"
+          >Skills</a
+        >
+        <a
+          href="#contact"
+          class="text-muted-foreground font-medium hover:text-accent transition-colors"
+          >Contact</a
+        >
+        <button
+          id="theme-toggle"
+          class="p-2 text-foreground rounded-lg hover:bg-muted transition-colors"
+          aria-label="Toggle theme"
+        >
+          <!-- theme toggler -->
+          <svg
+            id="sun-icon"
+            class="w-5 h-5 hidden"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 17.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM12 1.75a.75.75 0 0 1 .75.75v1a.75.75 0 0 1-1.5 0v-1a.75.75 0 0 1 .75-.75zM4.22 4.22a.75.75 0 0 1 1.06 0l.71.71a.75.75 0 0 1-1.06 1.06l-.71-.71a.75.75 0 0 1 0-1.06zM1.75 12a.75.75 0 0 1 .75-.75h1a.75.75 0 0 1 0 1.5h-1a.75.75 0 0 1-.75-.75zM4.22 19.78a.75.75 0 0 1 0-1.06l.71-.71a.75.75 0 1 1 1.06 1.06l-.71.71a.75.75 0 0 1-1.06 0zM12 20.25a.75.75 0 0 1 .75.75v1a.75.75 0 0 1-1.5 0v-1a.75.75 0 0 1 .75-.75zM19.78 19.78a.75.75 0 0 1-1.06 0l-.71-.71a.75.75 0 0 1 1.06-1.06l.71.71a.75.75 0 0 1 0 1.06zM20.25 12a.75.75 0 0 1 .75.75h1a.75.75 0 0 1 0-1.5h-1a.75.75 0 0 1-.75-.75zM19.78 4.22a.75.75 0 0 1 0 1.06l-.71.71a.75.75 0 0 1-1.06-1.06l.71-.71a.75.75 0 0 1 1.06 0z"
+            ></path>
+          </svg>
+          <svg
+            id="moon-icon"
+            class="w-5 h-5"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M17.293 13.293A8 8 0 0 1 6.707 2.707a8.001 8.001 0 1 0 10.586 10.586z"
+            ></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Hamburger menu button -->
+      <div class="lg:hidden">
+        <button id="menu-btn" class="p-2 text-foreground" aria-label="Menu">
+          <svg
+            class="w-5 h-5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              id="menu-icon"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+            <path
+              id="close-icon"
+              class="hidden"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Nobile Menu -->
+<div
+  id="mobile-menu"
+  class="fixed inset-0 z-40 opacity-0 pointer-events-none transition-opacity duration-300 lg:hidden"
+  style="background: color-mix(in srgb, var(--color-background) 97%, transparent); backdrop-filter: blur(8px);"
+>
+  <div class="flex flex-col items-center justify-center h-full gap-8">
+    <a
+      href="#about"
+      class="mobile-link text-4xl font-heading font-semibold text-foreground hover:text-accent hover:scale-105 transition-all"
+      >About</a
+    >
+    <a
+      href="#projects"
+      class="mobile-link text-4xl font-heading font-semibold text-foreground hover:text-accent hover:scale-105 transition-all"
+      >Projects</a
+    >
+    <a
+      href="#skills"
+      class="mobile-link text-4xl font-heading font-semibold text-foreground hover:text-accent hover:scale-105 transition-all"
+      >Skills</a
+    >
+    <a
+      href="#contact"
+      class="mobile-link text-4xl font-heading font-semibold text-foreground hover:text-accent hover:scale-105 transition-all"
+      >Contact</a
+    >
+
+    <button
+      id="theme-toggle-mobile"
+      class="mt-8 px-8 py-4 flex items-center gap-3 bg-muted border border-border rounded-xl text-foreground font-medium hover:bg-accent hover:text-accent-foreground transition-colors"
+      aria-label="Toggle theme"
+    >
+      <svg
+        id="sun-icon-mobile"
+        class="w-5 h-5 hidden"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 17.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM12 1.75a.75.75 0 0 1 .75.75v1a.75.75 0 0 1-1.5 0v-1a.75.75 0 0 1 .75-.75zM4.22 4.22a.75.75 0 0 1 1.06 0l.71.71a.75.75 0 0 1-1.06 1.06l-.71-.71a.75.75 0 0 1 0-1.06zM1.75 12a.75.75 0 0 1 .75-.75h1a.75.75 0 0 1 0 1.5h-1a.75.75 0 0 1-.75-.75zM4.22 19.78a.75.75 0 0 1 0-1.06l.71-.71a.75.75 0 1 1 1.06 1.06l-.71.71a.75.75 0 0 1-1.06 0zM12 20.25a.75.75 0 0 1 .75.75v1a.75.75 0 0 1-1.5 0v-1a.75.75 0 0 1 .75-.75zM19.78 19.78a.75.75 0 0 1-1.06 0l-.71-.71a.75.75 0 0 1 1.06-1.06l.71.71a.75.75 0 0 1 0 1.06zM20.25 12a.75.75 0 0 1 .75.75h1a.75.75 0 0 1 0-1.5h-1a.75.75 0 0 1-.75-.75zM19.78 4.22a.75.75 0 0 1 0 1.06l-.71.71a.75.75 0 0 1-1.06-1.06l.71-.71a.75.75 0 0 1 1.06 0z"
+        ></path>
+      </svg>
+      <svg
+        id="moon-icon-mobile"
+        class="w-5 h-5"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M17.293 13.293A8 8 0 0 1 6.707 2.707a8.001 8.001 0 1 0 10.586 10.586z"
+        ></path>
+      </svg>
+      <span>Toggle Theme</span>
+    </button>
+  </div>
+</div>
+
+<style>
+  #navbar.scrolled {
+    background: color-mix(in srgb, var(--color-background) 85%, transparent);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 1px 3px
+      color-mix(in srgb, var(--color-foreground) 10%, transparent);
+  }
+
+  #mobile-menu.open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+</style>
+
+<script>
+  // Theme toggle
+  function initTheme() {
+    const theme = localStorage.getItem("theme");
+    const systemDark = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
+    const isDark = theme === "dark" || (!theme && systemDark);
+
+    if (isDark) {
+      document.documentElement.classList.add("dark");
+    }
+    updateIcons(isDark);
+  }
+
+  function updateIcons(isDark: boolean) {
+    const icons = [
+      {
+        sun: document.getElementById("sun-icon"),
+        moon: document.getElementById("moon-icon"),
+      },
+      {
+        sun: document.getElementById("sun-icon-mobile"),
+        moon: document.getElementById("moon-icon-mobile"),
+      },
+    ];
+
+    icons.forEach(({ sun, moon }) => {
+      if (isDark) {
+        sun?.classList.remove("hidden");
+        moon?.classList.add("hidden");
+      } else {
+        sun?.classList.add("hidden");
+        moon?.classList.remove("hidden");
+      }
+    });
+  }
+
+  function toggleTheme() {
+    const isDark = document.documentElement.classList.toggle("dark");
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+    updateIcons(isDark);
+  }
+
+  // Scroll effect
+  window.addEventListener("scroll", () => {
+    const navbar = document.getElementById("navbar");
+    if (window.scrollY > 50) {
+      navbar?.classList.add("scrolled");
+    } else {
+      navbar?.classList.remove("scrolled");
+    }
+  });
+
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const menuIcon = document.getElementById("menu-icon");
+  const closeIcon = document.getElementById("close-icon");
+
+  function closeMobileMenu() {
+    mobileMenu?.classList.remove("open");
+    menuIcon?.classList.remove("hidden");
+    closeIcon?.classList.add("hidden");
+  }
+
+  menuBtn?.addEventListener("click", () => {
+    mobileMenu?.classList.toggle("open");
+    menuIcon?.classList.toggle("hidden");
+    closeIcon?.classList.toggle("hidden");
+  });
+
+  document.querySelectorAll('.mobile-link, a[href="#home"]').forEach((link) => {
+    link.addEventListener("click", closeMobileMenu);
+  });
+
+  // Call this on load
+  initTheme();
+
+  document
+    .getElementById("theme-toggle")
+    ?.addEventListener("click", toggleTheme);
+  document
+    .getElementById("theme-toggle-mobile")
+    ?.addEventListener("click", toggleTheme);
+</script>

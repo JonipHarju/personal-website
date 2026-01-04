@@ -7,13 +7,14 @@ import AboutSection from "../components/AboutSection.astro";
 import ProjectSection from "../components/ProjectSection.astro";
 import SkillsSection from "../components/SkillsSection.astro";
 import ContactSection from "../components/ContactSection.astro";
+import Navbar from "../components/Navbar.astro";
 ---
 
 <!-- TODO: When making blog add a effect where the image has a overlay that is the
 accent color of the page that turns into images real color when hovered. -->
 <Layout>
+  <Navbar />
   <ParticleBackground />
-  <ThemeToggle />
   <HeroSection />
   <AboutSection />
   <ProjectSection />
