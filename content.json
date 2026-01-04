@@ -10,8 +10,9 @@
     "name": "Joni Harju",
     "role": "Software Developer",
     "description": [
-      "I'm a software developer with over five years of experience creating web applications and digital solutions. I'm passionate about building modern, user-friendly applications that solve real-world problems.",
-      "When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or enjoying the great outdoors."
+      "I'm a software developer with over three years of professional experience. I specialize in modern web development technologies and have delivered client projects from start to finish using various different technologies.",
+      "I am currently back in school at Haaga-Helia University of Applied Sciences, completing my Bachelor's in Business Information Technology and learning new skills such as Java, Python, React Native, and other modern software development technologies.",
+      "I am truly passionate about programming and different technologies and love learning more and expanding my knowledge."
     ],
     "social": {
       "github": "https://github.com/joniharju",
@@ -32,7 +33,7 @@
   },
   "contact": {
     "title": "Get In Touch",
-    "description": "I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.",
+    "description": "Feel free to reach out if you want to discuss projects or opportunities.",
     "email": "jonipharju@gmail.com",
     "social": {
       "linkedin": "https://www.linkedin.com/in/joni-h-89172a134/",
@@ -42,7 +43,7 @@
   },
   "skills": {
     "title": "Tech Stack & Expertise",
-    "subtitle": "Technologies I work with and my experience using them.",
+    "subtitle": "Technologies I work with and what i did with them.",
     "categories": [
       {
         "name": "Frontend",
@@ -64,8 +65,8 @@
           {
             "name": "Astro",
             "level": "Intermediate",
-            "experience": "0.5 years",
-            "description": "Built SSG blog website with Astro, optimizing performance by shipping minimal JavaScript to the client. Utilized Astro's built-in support for markdown to create blog content.",
+            "experience": "1 years",
+            "description": "Created a personal blog website with Astro and this portfolio website.",
             "icon": "astro"
           },
           {
@@ -85,14 +86,14 @@
           {
             "name": "Tailwind CSS",
             "level": "Intermediate",
-            "experience": "0.5 years",
-            "description": "Styled websites and created style systems.",
+            "experience": "1.5 years",
+            "description": "Styled websites and created style systems. Currently my preferred way of styling content.",
             "icon": "tailwindcss"
           },
           {
             "name": "Material-UI",
             "level": "Intermediate",
-            "experience": "1 year",
+            "experience": "2 year",
             "description": "Used Material-UI for styling and themeing.",
             "icon": "mui"
           }
@@ -112,8 +113,22 @@
             "name": "JavaScript",
             "level": "Advanced",
             "experience": "3 years",
-            "description": "Used JavaScript for front-end interactivity and back-end server logic.",
+            "description": "Built dynamic web applications and implemented interactive features for various projects.",
             "icon": "javascript"
+          },
+          {
+            "name": "Java",
+            "level": "Intermediate",
+            "experience": "0.5 years",
+            "description": "Learned Java fundamentals through university courses. Currently taking an advanced course focusing on back-end development in Java using Spring Boot",
+            "icon": "java"
+          },
+          {
+            "name": "Python",
+            "level": "Intermediate",
+            "experience": "0.5 years",
+            "description": "Learned Python fundamentals on a university course.",
+            "icon": "python"
           }
         ]
       },
@@ -123,28 +138,28 @@
           {
             "name": "Node.js",
             "level": "Advanced",
-            "experience": "2 years",
+            "experience": "3 years",
             "description": "Built Node scripts for automating internal workflows.",
             "icon": "nodedotjs"
           },
           {
             "name": "PostgreSQL",
             "level": "Intermediate",
-            "experience": "1 year",
+            "experience": "2 year",
             "description": "Used PostgreSQL as a database for a internal CMS tool.",
             "icon": "postgresql"
           },
           {
             "name": "Firebase",
             "level": "Intermediate",
-            "experience": "0.5 years",
+            "experience": "1 years",
             "description": "Used as a backend for a website to save contact form information.",
             "icon": "firebase"
           },
           {
             "name": "Sanity.io",
             "level": "Intermediate",
-            "experience": "0.5 years",
+            "experience": "1 years",
             "description": "Setup Sanity from ground up and built a headless website for a customer.",
             "icon": "sanity"
           },
@@ -161,7 +176,7 @@
   },
   "projects": {
     "title": "Featured Work",
-    "subtitle": "Some of the professional work and personal projects I've done.",
+    "subtitle": "Some of the projects I have done.",
     "professionalWork": {
       "title": "Professional Work",
       "list": [
@@ -207,7 +222,7 @@
           "id": "loan-application-client",
           "title": "Loan Application Client",
           "description": "Developed a loan application website using Next.js and Material UI. Set up a custom backend using Strapi, PostgreSQL, and MinIO for managing content and media storage. Enabled content management in three languages, allowing easy creation and editing of pages via Strapi.",
-          "image": "placeholder.png",
+          "image": "placeholder1.jpg",
           "technologies": [
             "React",
             "Next.js",
@@ -226,7 +241,7 @@
           "id": "codekatu-cms",
           "title": "Codekatu Oy - Internal CMS Tool",
           "description": "Designed and developed an internal CMS tool for managing content for customer projects with Next.js. Configured a PostgreSQL database using Prisma as the ORM and implemented user authentication with email functionalities.",
-          "image": "placeholder.png",
+          "image": "placeholder2.jpg",
           "technologies": [
             "React",
             "Next.js",

@@ -1,5 +1,3 @@
-import placeholderImage from "../assets/projects/placeholder.png";
-
 // Helper function to get image from assets
 export const getProjectImage = async (imageName: string) => {
   try {
@@ -12,5 +10,5 @@ export const getProjectImage = async (imageName: string) => {
   } catch (error) {
     console.warn(`Could not load image: ${imageName}`);
   }
-  return placeholderImage;
+  return;
 };
