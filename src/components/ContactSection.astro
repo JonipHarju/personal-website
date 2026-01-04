@@ -1,28 +1,27 @@
 ---
-
+import content from "../../content.json";
 ---
 
 <section id="contact" class="py-20 px-4">
   <div class="max-w-4xl mx-auto text-center contact-animate">
     <div class="mb-12">
       <h2 class="text-4xl md:text-5xl font-bold text-accent mb-4 font-heading">
-        Get In Touch
+        {content.contact.title}
       </h2>
       <p
         class="bg-background text-muted-foreground text-lg max-w-2xl mx-auto font-baseText"
       >
-        I'm always open to discussing new opportunities, interesting projects,
-        or just having a chat about technology.
+        {content.contact.description}
       </p>
     </div>
 
     <div class="grid md:grid-cols-3 gap-8 mb-12 bg-background">
-      <!-- Email Card - Icon is clickable, text is selectable -->
+      <!-- Email Card -->
       <div
         class="flex flex-col items-center p-6 rounded-lg border border-border hover:bg-muted/50"
       >
         <a
-          href="mailto:jonipharju@gmail.com"
+          href={`mailto:${content.contact.email}`}
           class="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mb-4 hover:bg-accent/20"
         >
           <svg
@@ -41,13 +40,13 @@
         </a>
         <h3 class="font-semibold text-foreground mb-2 font-baseText">Email</h3>
         <span class="text-accent-text font-baseText select-all">
-          jonipharju@gmail.com
+          {content.contact.email}
         </span>
       </div>
 
       <!-- LinkedIn Card -->
       <a
-        href="https://www.linkedin.com/in/joni-h-89172a134/"
+        href={content.contact.social.linkedin}
         target="_blank"
         rel="noopener noreferrer"
         class="flex flex-col items-center p-6 rounded-lg border border-border hover:bg-muted/50 group"
@@ -72,7 +71,7 @@
 
       <!-- GitHub Card -->
       <a
-        href="https://github.com/jonipharju"
+        href={content.contact.social.github}
         target="_blank"
         rel="noopener noreferrer"
         class="flex flex-col items-center p-6 rounded-lg border border-border hover:bg-muted/50 group"
@@ -96,7 +95,7 @@
 
     <div class="border-t border-accent/20 pt-8">
       <p class="text-muted-foreground text-sm font-baseText">
-        © 2024 Joni Harju. All rights reserved.
+        {content.contact.footer}
       </p>
     </div>
   </div>

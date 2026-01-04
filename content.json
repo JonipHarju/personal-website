@@ -8,15 +8,37 @@
   "about": {
     "title": "About Me",
     "name": "Joni Harju",
-    "description": "I'm a software developer with over three years of experience creating efficient, scalable, and user-friendly web applications.",
-    "contact": {
-      "email": "jonipharju@gmail.com",
-      "linkedin": "https://www.linkedin.com/in/joni-h-89172a134/",
-      "resume": "/joni-harju-resume.pdf"
+    "role": "Software Developer",
+    "description": [
+      "I'm a software developer with over five years of experience creating web applications and digital solutions. I'm passionate about building modern, user-friendly applications that solve real-world problems.",
+      "When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or enjoying the great outdoors."
+    ],
+    "social": {
+      "github": "https://github.com/joniharju",
+      "linkedin": "https://linkedin.com/in/joniharju",
+      "email": "jonipharju@gmail.com"
     },
-    "backgroundWork": "I have professional experience building modern web applications, specializing in JavaScript/TypeScript ecosystem. My work includes developing scalable headless websites, custom CMS solutions and fast SEO optimized static websites",
-    "backgroundSchool": "I am currently studying at Haaga Helia to major in Business Information Technology specializing in Software Development",
-    "interests": "Outside of coding, I enjoy playing guitar, exploring new tech, and diving into PC hardware and gaming."
+    "cv": "/cv.pdf",
+    "interests": [
+      "Web Development",
+      "Programming",
+      "UI/UX Design",
+      "PC Hardware",
+      "Reading",
+      "Gaming",
+      "Music",
+      "Guitars"
+    ]
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "description": "I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.",
+    "email": "jonipharju@gmail.com",
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/joni-h-89172a134/",
+      "github": "https://github.com/jonipharju"
+    },
+    "footer": "© 2024 Joni Harju. All rights reserved."
   },
   "skills": {
     "title": "Tech Stack & Expertise",

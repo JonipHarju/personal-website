@@ -40,15 +40,25 @@ export interface ContentData {
   about: {
     title: string;
     name: string;
-    description: string;
-    contact: {
-      email: string;
+    role: string;
+    description: string[];
+    social: {
+      github: string;
       linkedin: string;
-      resume: string;
+      email: string;
     };
-    backgroundWork: string;
-    backgroundSchool: string;
-    interests: string;
+    cv: string;
+    interests: string[];
+  };
+  contact: {
+    title: string;
+    description: string;
+    email: string;
+    social: {
+      linkedin: string;
+      github: string;
+    };
+    footer: string;
   };
   skills: {
     title: string;
