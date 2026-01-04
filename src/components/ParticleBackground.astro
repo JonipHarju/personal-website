@@ -23,6 +23,7 @@
 
   const mousePos = { x: -9999, y: -9999 };
   let particles = [];
+  let lastWidth = window.innerWidth;
 
   function resizeCanvas() {
     canvas.width = window.innerWidth;
@@ -30,20 +31,21 @@
   }
   resizeCanvas();
 
-  let resizeTimeout;
-
   window.addEventListener("resize", () => {
-    resizeCanvas();
-    // Only recreate the particles if the rezise is significant and not a small change like mobile address bar flickering
-    clearTimeout(resizeTimeout);
-    resizeTimeout = setTimeout(() => {
+    const currentWidth = window.innerWidth;
+
+    // resize canvas if width changes
+    if (currentWidth !== lastWidth) {
+      lastWidth = currentWidth;
+      resizeCanvas();
+
+      // recreate particles if count should change
       const currentCount = particles.length;
       const expectedCount = getParticleCount();
-      // Only recreate if particle count should change
       if (currentCount !== expectedCount) {
         createParticles();
       }
-    }, 150);
+    }
   });
 
   function getParticleCount() {
