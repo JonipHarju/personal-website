@@ -29,9 +29,21 @@
     canvas.height = window.innerHeight;
   }
   resizeCanvas();
+
+  let resizeTimeout;
+
   window.addEventListener("resize", () => {
     resizeCanvas();
-    createParticles();
+    // Only recreate the particles if the rezise is significant and not a small change like mobile address bar flickering
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(() => {
+      const currentCount = particles.length;
+      const expectedCount = getParticleCount();
+      // Only recreate if particle count should change
+      if (currentCount !== expectedCount) {
+        createParticles();
+      }
+    }, 150);
   });
 
   function getParticleCount() {
