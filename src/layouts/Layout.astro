@@ -1,61 +1,85 @@
 ---
 import "../styles/global.css";
+import "@fontsource/cinzel/400.css";
+import "@fontsource/cinzel/500.css";
+import "@fontsource/cinzel/600.css";
+import "@fontsource/cormorant-garamond/400.css";
+import "@fontsource/cormorant-garamond/500.css";
+import "@fontsource/cormorant-garamond/400-italic.css";
+import "@fontsource/cormorant-garamond/500-italic.css";
+import "@fontsource/spectral/400.css";
+import "@fontsource/spectral/500.css";
+import "@fontsource/spectral/600.css";
+import "@fontsource/spectral/400-italic.css";
+import "@fontsource/public-sans/400.css";
+import "@fontsource/public-sans/500.css";
+import "@fontsource/public-sans/600.css";
+import "@fontsource/jetbrains-mono/400.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+  ogImage?: string;
+  ogType?: "website" | "article";
+}
+
+const {
+  title = "Joni Harju — Software Developer",
+  description = "Personal website and blog of software developer Joni Harju.",
+  ogImage = "/og-default.png",
+  ogType = "website",
+} = Astro.props;
+
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const ogImageUrl = new URL(ogImage, Astro.site);
 ---
 
 <!doctype html>
-<html lang="en" class="">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-
-    <meta name="generator" content={Astro.generator} />
-    <title>Joni Harju</title>
-    <meta
-      name="description"
-      content="Personal website of software developer Joni Harju"
-    />
-
-    <!--Orbitron for big and small headings, and montserrat for base text  -->
-    <!-- TODO: when ready remove the unneeded weights and styles if needed -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
-      rel="stylesheet"
-    /> -->
+    <link rel="sitemap" href="/sitemap-index.xml" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Orbitron:wght@600;700&display=swap"
-      rel="stylesheet"
+      rel="alternate"
+      type="application/rss+xml"
+      title="Joni Harju — Blog"
+      href={new URL("rss.xml", Astro.site)}
     />
+    <meta name="generator" content={Astro.generator} />
 
-    <!-- Prevent flash light theme on page load if user has dark theme. -->
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:site_name" content="Joni Harju" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageUrl} />
+
+    <!-- Set the theme before first paint to avoid a flash. -->
     <script is:inline>
       (function () {
-        const theme = localStorage.getItem("theme");
-        const systemPrefersDark = window.matchMedia(
+        const stored = localStorage.getItem("theme");
+        const systemDark = window.matchMedia(
           "(prefers-color-scheme: dark)"
         ).matches;
-        const isDark = theme === "dark" || (!theme && systemPrefersDark);
-
-        if (isDark) {
-          document.documentElement.classList.add("dark");
-        }
+        const theme = stored ?? (systemDark ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
       })();
     </script>
   </head>
-  <body class="m-0 w-full h-full bg-background text-foreground font-baseText">
+  <body>
     <slot />
   </body>
 </html>
-
-<style>
-  html {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-  }
-</style>

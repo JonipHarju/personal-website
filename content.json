@@ -2,7 +2,7 @@
   "heroSection": {
     "title": "Joni Harju",
     "subtitle": "Software Developer",
-    "description": "I build reliable solutions that work",
+    "description": "A proven track record of taking applications from design to production",
     "cta": "Learn More About Me"
   },
   "about": {
@@ -10,167 +10,70 @@
     "name": "Joni Harju",
     "role": "Software Developer",
     "description": [
-      "I'm a software developer with over three years of professional experience. I specialize in modern web development technologies and have delivered client projects from start to finish using various different technologies.",
-      "I am currently back in school at Haaga-Helia University of Applied Sciences, completing my Bachelor's in Business Information Technology and learning new skills such as Java, Python, React Native, and other modern software development technologies.",
-      "I am truly passionate about programming and different technologies and love learning more and expanding my knowledge."
+      "I'm a software developer from Helsinki with two and a half years of full-time experience building web applications for clients. Most of that work has been with React, Next.js and TypeScript at Codekatu Oy, where I took projects from the first design drafts all the way to production.",
+      "These days I'm back in school, finishing my Bachelor's in Business Information Technology at Haaga-Helia and the plan is to graduate in December 2026",
+      "I have experience from all parts of the stack. I've built frontends and backends, set up headless CMS platforms from scratch, and managed the VPS infrastructure everything runs on."
     ],
     "social": {
       "github": "https://github.com/jonipharju",
       "linkedin": "https://linkedin.com/in/joni-h-89172a134",
       "email": "jonipharju@gmail.com"
     },
-    "cv": "/cv.pdf",
-    "interests": [
-      "Web Development",
-      "Programming",
-      "UI/UX Design",
-      "PC Hardware",
-      "Reading",
-      "Gaming",
-      "Music",
-      "Guitars"
-    ]
+    "cv": "/cv.pdf"
   },
   "contact": {
     "title": "Get In Touch",
-    "description": "Feel free to reach out if you want to discuss projects or opportunities.",
+    "description": "I'm open to work opportunities of all kinds, so feel free to reach out.",
     "email": "jonipharju@gmail.com",
     "social": {
       "linkedin": "https://www.linkedin.com/in/joni-h-89172a134/",
       "github": "https://github.com/jonipharju"
     },
-    "footer": "© 2024 Joni Harju. All rights reserved."
+    "footer": "Joni Harju. All rights reserved."
   },
   "skills": {
     "title": "Tech Stack & Expertise",
-    "subtitle": "Technologies I work with and what i did with them.",
+    "subtitle": "Technologies I have worked with.",
     "categories": [
       {
         "name": "Frontend",
         "skills": [
-          {
-            "name": "React",
-            "level": "Advanced",
-            "experience": "2 years",
-            "description": "Built dynamic and responsive user interfaces for several web applications.",
-            "icon": "react"
-          },
-          {
-            "name": "Next.js",
-            "level": "Advanced",
-            "experience": "2 years",
-            "description": "Developed server-side rendered and statically generated websites for improved performance and SEO. Used as my main tool for over 2 years.",
-            "icon": "nextjs"
-          },
-          {
-            "name": "Astro",
-            "level": "Intermediate",
-            "experience": "1 years",
-            "description": "Created a personal blog website with Astro and this portfolio website.",
-            "icon": "astro"
-          },
-          {
-            "name": "HTML",
-            "level": "Advanced",
-            "experience": "4 years",
-            "description": "Crafted semantic HTML structures for various websites.",
-            "icon": "html5"
-          },
-          {
-            "name": "CSS",
-            "level": "Advanced",
-            "experience": "4 years",
-            "description": "Styled websites and implemented responsive design techniques and animations to enhance user experience across devices.",
-            "icon": "css3"
-          },
-          {
-            "name": "Tailwind CSS",
-            "level": "Intermediate",
-            "experience": "1.5 years",
-            "description": "Styled websites and created style systems. Currently my preferred way of styling content.",
-            "icon": "tailwindcss"
-          },
-          {
-            "name": "Material-UI",
-            "level": "Intermediate",
-            "experience": "2 year",
-            "description": "Used Material-UI for styling and themeing.",
-            "icon": "mui"
-          }
+          "React",
+          "Next.js",
+          "Astro",
+          "React Native",
+          "Expo",
+          "HTML",
+          "CSS",
+          "Tailwind CSS",
+          "Material-UI"
         ]
       },
       {
         "name": "Programming Languages",
-        "skills": [
-          {
-            "name": "TypeScript",
-            "level": "Advanced",
-            "experience": "2 years",
-            "description": "Built headless websites, implemented strong type systems for frontend applications, and ensured type safety in various projects.",
-            "icon": "typescript"
-          },
-          {
-            "name": "JavaScript",
-            "level": "Advanced",
-            "experience": "3 years",
-            "description": "Built dynamic web applications and implemented interactive features for various projects.",
-            "icon": "javascript"
-          },
-          {
-            "name": "Java",
-            "level": "Intermediate",
-            "experience": "0.5 years",
-            "description": "Learned Java fundamentals through university courses. Currently taking an advanced course focusing on back-end development in Java using Spring Boot",
-            "icon": "java"
-          },
-          {
-            "name": "Python",
-            "level": "Intermediate",
-            "experience": "0.5 years",
-            "description": "Learned Python fundamentals on a university course.",
-            "icon": "python"
-          }
-        ]
+        "skills": ["TypeScript", "JavaScript", "Java", "Python"]
       },
       {
         "name": "Backend & Database",
         "skills": [
-          {
-            "name": "Node.js",
-            "level": "Advanced",
-            "experience": "3 years",
-            "description": "Built Node scripts for automating internal workflows.",
-            "icon": "nodedotjs"
-          },
-          {
-            "name": "PostgreSQL",
-            "level": "Intermediate",
-            "experience": "2 year",
-            "description": "Used PostgreSQL as a database for a internal CMS tool.",
-            "icon": "postgresql"
-          },
-          {
-            "name": "Firebase",
-            "level": "Intermediate",
-            "experience": "1 years",
-            "description": "Used as a backend for a website to save contact form information.",
-            "icon": "firebase"
-          },
-          {
-            "name": "Sanity.io",
-            "level": "Intermediate",
-            "experience": "1 years",
-            "description": "Setup Sanity from ground up and built a headless website for a customer.",
-            "icon": "sanity"
-          },
-          {
-            "name": "Prisma",
-            "level": "Intermediate",
-            "experience": "0.5 years",
-            "description": "Utilized Prisma as orm for a internal CMS tool.",
-            "icon": "prisma"
-          }
+          "Node.js",
+          "Express.js",
+          "Spring Boot",
+          "PostgreSQL",
+          "Supabase",
+          "Strapi",
+          "Sanity.io",
+          "Firebase",
+          "Prisma"
         ]
+      },
+      {
+        "name": "Infrastructure",
+        "skills": ["Docker", "Linux VPS (Hetzner)", "Coolify", "Vercel"]
+      },
+      {
+        "name": "AI-Assisted Development",
+        "skills": ["Claude Code", "GitHub Copilot CLI", "Ollama"]
       }
     ]
   },
@@ -201,7 +104,7 @@
         {
           "id": "codekatu-website",
           "title": "Codekatu Oy - Headless website",
-          "description": "Built a fully headless website for Codekatu Oy using Next.js, Strapi CMS, and PostgreSQL. Set up Strapi from scratch for structured content management and integrated MinIO (S3-compatible) for media storage. Configured and deployed the solution on a Hetzner VPS. Designed the website using Figma and implemented styling with Tailwind CSS",
+          "description": "Built a fully headless website for Codekatu Oy using Next.js, Strapi CMS, and PostgreSQL. Set up Strapi from scratch for structured content management and integrated MinIO (S3-compatible) for media storage. Configured and deployed the solution on a Hetzner VPS. Designed the website using Figma and implemented styling with Tailwind CSS.",
           "image": "codekatu.png",
           "technologies": [
             "React",
@@ -222,7 +125,7 @@
           "id": "loan-application-client",
           "title": "Loan Application Client",
           "description": "Developed a loan application website using Next.js and Material UI. Set up a custom backend using Strapi, PostgreSQL, and MinIO for managing content and media storage. Enabled content management in three languages, allowing easy creation and editing of pages via Strapi.",
-          "image": "placeholder1.jpg",
+          "image": "private-client-project.png",
           "technologies": [
             "React",
             "Next.js",
@@ -241,7 +144,7 @@
           "id": "codekatu-cms",
           "title": "Codekatu Oy - Internal CMS Tool",
           "description": "Designed and developed an internal CMS tool for managing content for customer projects with Next.js. Configured a PostgreSQL database using Prisma as the ORM and implemented user authentication with email functionalities.",
-          "image": "placeholder2.jpg",
+          "image": "private-internal-tool.png",
           "technologies": [
             "React",
             "Next.js",

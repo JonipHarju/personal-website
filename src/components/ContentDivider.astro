@@ -1,33 +1,6 @@
 ---
-const { name } = Astro.props;
 ---
 
-<div
-  class="flex items-center justify-center gap-4 mb-12 content-divider-animate"
->
-  <div class="flex items-center gap-4">
-    <div
-      class="hidden sm:block w-12 h-px bg-gradient-to-r from-transparent to-accent"
-    >
-    </div>
-
-    <div
-      class="relative px-8 py-4 bg-background border-2 border-accent/20 rounded-full group hover:border-accent/30 transition-all"
-    >
-      <div
-        class="absolute inset-0 bg-background rounded-full group-hover:bg-accent/5 transition-all duration-00"
-      >
-      </div>
-      <h3
-        class="relative text-center text-xl font-bold text-accent-text font-baseText"
-      >
-        {name}
-      </h3>
-    </div>
-
-    <div
-      class="hidden sm:block w-12 h-px bg-gradient-to-l from-transparent to-accent"
-    >
-    </div>
-  </div>
+<div class="mx-auto w-full max-w-[var(--content-max)] px-[var(--gutter)]">
+  <div class="rule-diamond" aria-hidden="true"><span></span></div>
 </div>

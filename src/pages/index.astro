@@ -1,23 +1,22 @@
 ---
-import HeroSection from "../components/HeroSection.astro";
-import ParticleBackground from "../components/ParticleBackground.astro";
-import ThemeToggle from "../components/ThemeToggle.astro";
 import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import HeroSection from "../components/HeroSection.astro";
+import ContentDivider from "../components/ContentDivider.astro";
 import AboutSection from "../components/AboutSection.astro";
 import ProjectSection from "../components/ProjectSection.astro";
 import SkillsSection from "../components/SkillsSection.astro";
 import ContactSection from "../components/ContactSection.astro";
-import Navbar from "../components/Navbar.astro";
 ---
 
-<!-- TODO: When making blog add a effect where the image has a overlay that is the
-accent color of the page that turns into images real color when hovered. -->
 <Layout>
   <Navbar />
-  <ParticleBackground />
-  <HeroSection />
-  <AboutSection />
-  <ProjectSection />
-  <SkillsSection />
-  <ContactSection />
+  <main>
+    <HeroSection />
+    <ContentDivider />
+    <AboutSection />
+    <ProjectSection />
+    <SkillsSection />
+    <ContactSection />
+  </main>
 </Layout>

@@ -17,17 +17,9 @@ export interface ProjectSection {
   list: Project[];
 }
 
-export interface SkillIcon {
-  name: string;
-  level: string;
-  experience: string;
-  description: string;
-  icon: string;
-}
-
 export interface SkillCategory {
   name: string;
-  skills: SkillIcon[];
+  skills: string[];
 }
 
 export interface ContentData {
@@ -48,7 +40,6 @@ export interface ContentData {
       email: string;
     };
     cv: string;
-    interests: string[];
   };
   contact: {
     title: string;

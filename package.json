@@ -9,8 +9,17 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/rss": "^4.0.19",
+    "@astrojs/sitemap": "^3.7.3",
+    "@fontsource/cinzel": "^5.2.8",
+    "@fontsource/cormorant-garamond": "^5.2.11",
+    "@fontsource/jetbrains-mono": "^5.2.8",
+    "@fontsource/public-sans": "^5.2.7",
+    "@fontsource/spectral": "^5.2.8",
+    "@tailwindcss/typography": "^0.5.20",
     "@tailwindcss/vite": "^4.1.13",
     "astro": "^5.15.2",
+    "rehype-external-links": "^3.0.0",
     "tailwindcss": "^4.1.13"
   }
 }

@@ -1,0 +1,30 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+---
+
+<Layout title="Page not found — Joni Harju">
+  <Navbar />
+  <main
+    class="mx-auto flex w-full max-w-[620px] flex-col items-center px-[var(--gutter)] pt-32 pb-[var(--section-y)] text-center"
+  >
+    <div class="flex items-center gap-3">
+      <span class="diamond" aria-hidden="true"></span>
+      <p class="label-caps m-0 text-accent">404</p>
+      <span class="diamond" aria-hidden="true"></span>
+    </div>
+    <h1 class="display-caps mt-8 mb-0 text-2xl sm:text-3xl">
+      Page Not Found
+    </h1>
+    <p class="mt-7 mb-0 text-lg leading-relaxed text-muted">
+      The page you're looking for doesn't exist — it may have moved, or it
+      never was.
+    </p>
+    <a
+      href="/"
+      class="label-caps mt-12 border border-line-strong px-6 py-3 text-ink no-underline transition-colors duration-150 hover:border-accent hover:text-accent"
+    >
+      Back to Home
+    </a>
+  </main>
+</Layout>
